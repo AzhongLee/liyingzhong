@@ -1,0 +1,11 @@
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.exe.config
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.g.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\RKP1679.csproj.GenerateResource.Cache
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\RKP1679.csprojResolveAssemblyReference.cache

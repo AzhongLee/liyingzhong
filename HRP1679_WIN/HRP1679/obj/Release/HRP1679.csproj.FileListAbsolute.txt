@@ -1,0 +1,10 @@
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Release\HRP1679.exe.config
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.g.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.Properties.Resources.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.UI.FormMain.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.UI.UC.UCAnalyze.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.UI.UC.UCCollect.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.UI.UC.UCInfo.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.UI.UC.UCSignal.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.csproj.GenerateResource.Cache
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Release\HRP1679.exe.licenses

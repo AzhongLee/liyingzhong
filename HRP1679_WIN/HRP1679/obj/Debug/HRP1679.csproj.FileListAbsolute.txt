@@ -1,0 +1,230 @@
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.exe.config
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\bin\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.g.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+E:\项目\HRP1679\程序\HRP1679WinForm\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+E:\项目\HRP1679\程序\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170616\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+C:\Users\yingzhong.li\Desktop\HRP1679_WIN_170619\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170620\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+E:\HRP1679_WIN_170627基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+C:\Users\liyingzhong\Documents\Visual Studio 2017\Projects\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+\\Mac\Home\Documents\VSProject\HRP1679_WIN_170628基带调试\HRP1679_WIN_170627\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+E:\changsheng.liu\Project\HRP1679\Code\Collect\HRP1679_WIN160701-v1.1\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe.config
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.exe
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\HRP1679.pdb
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.dll
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.dll
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.dll
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.dll
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Data.v9.1.xml
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.Utils.v9.1.xml
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraEditors.v9.1.xml
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\bin\Debug\DevExpress.XtraVerticalGrid.v9.1.xml
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.g.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCGeneration.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSystem.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.Properties.Resources.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormDebug.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormMain.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.FormState.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCAnalyze.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCCollect.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCInfo.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCSignal.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.UI.UC.UCState.resources
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.csproj.GenerateResource.Cache
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.exe
+\\Mac\Home\Documents\项目文档\1679\HRP1679_WIN_COLLECT_170701\HRP1679_WIN\HRP1679\obj\Debug\HRP1679.pdb

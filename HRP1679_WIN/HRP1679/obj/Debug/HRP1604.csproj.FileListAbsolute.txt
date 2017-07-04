@@ -1,0 +1,15 @@
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.FormMain.resources
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.Properties.Resources.resources
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.csproj.GenerateResource.Cache
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\bin\Debug\HRP1604.exe
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\bin\Debug\HRP1604.pdb
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.exe
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.pdb
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.UC.UCsystem.resources
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.exe.licenses
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.UC.UCpointPara.resources
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.UC.UCnarrowPara.resources
+C:\Users\RFSSSW\Desktop\HRP1568_WIN_160505\HRP1568\obj\Debug\HRP1604.UC.UCwide.resources
+C:\Users\RFSSSW\Desktop\RKP1604\RKP1604\obj\Debug\HRP1604.exe
+C:\Users\RFSSSW\Desktop\RKP1604\RKP1604\obj\Debug\HRP1604.pdb
