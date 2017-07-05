@@ -78,7 +78,7 @@ namespace HRP1679.BLL.Other
                  try
                  {
                      List<SelfCheckResult> result = DRFMCtrl.Instance.Dev800M.SelfCheck();
-                     if (result[0].Result && result[1].Result && result[2].Result)
+                     if (result[0].Result && result[1].Result )
                      {
                          LoggingService.logShowed("基带自检成功！" , InformationType.Success , InformationDisplayMode.FormList);
                          ParaUI.Instance.paraStatus.IDRFMStatus = true;

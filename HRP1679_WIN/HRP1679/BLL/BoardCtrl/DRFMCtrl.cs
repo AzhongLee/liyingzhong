@@ -77,11 +77,13 @@ namespace HRP1679.BLL.BoardCtrl
                 DRFMCtrl.Instance.Dev800M.PciDev = WinDriverHelper.Instance.OpenSpecificDevice(DevBaseBorad.deviceinfo.DeviceID , DevBaseBorad.deviceinfo.VendorID , DevBaseBorad.deviceinfo.deviceInstruction)[0];
                 DRFMCtrl.instance.Dev800M.Is800MBoard = true;
                 DRFMCtrl.instance.Dev800M.device = DRFMCtrl.instance.Dev800M.PciDev;
+                ParaUI.Instance.paraStatus.IDRFMStatus = DRFMCtrl.instance.Dev800M.Is800MBoard;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message , "警告" , MessageBoxButtons.OK , MessageBoxIcon.Error);
                 DRFMCtrl.instance.Dev800M.Is800MBoard = false;
+                ParaUI.Instance.paraStatus.IDRFMStatus = DRFMCtrl.instance.Dev800M.Is800MBoard;
             }
 
         }
@@ -338,7 +340,7 @@ namespace HRP1679.BLL.BoardCtrl
         {
             List<uint> CtrlW = new List<uint>();
             //第一个命令字
-            uint ctrlWord = paraUI.paraSignal.SignalType | paraUI.paraCollect.WorkModel << 4 | paraUI.paraSignal.SignalDataType << 8 | paraUI.paraDebug.PRFModel << 9 | paraUI.paraCollect.FrequencyModel << 10 | paraUI.paraCollect.ADch1 << 11 | paraUI.paraCollect.ADch2 << 12 | paraUI.paraCollect.ADch3 << 13 | paraUI.paraCollect.WorkStart << 14 | paraUI.paraCollect.CollectStart << 15;
+            uint ctrlWord = paraUI.paraSignal.SignalType | paraUI.paraCollect.WorkModel << 4 | paraUI.paraSignal.SignalDataType << 8 | paraUI.paraDebug.PRFModel << 9 | paraUI.paraCollect.FrequencyModel << 10 | paraUI.paraCollect.ADch1 << 11 | paraUI.paraCollect.ADch2 << 12 | paraUI.paraCollect.ADch3 << 13 | paraUI.paraCollect.WorkStart << 14 | paraUI.paraCollect.CollectStart << 15|paraUI.paraDebug.Detectionswitch<<16;
             CtrlW.Add(ctrlWord);
             //点频测试2
             ctrlWord = (uint)(paraUI.paraCollect.CenterFrequency / ConstData.Fs * Math.Pow(2 , 32));

@@ -310,7 +310,6 @@ namespace HRP1679.UI.UC
         {
           
             this.cmbSignType.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraSignal, "SignalType", false, DataSourceUpdateMode.OnPropertyChanged);        
-            this.cmbFcModel.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraCollect, "FrequencyModel", false, DataSourceUpdateMode.OnPropertyChanged);
             this.cmbSignDataType.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraSignal, "SignalDataType", false, DataSourceUpdateMode.OnPropertyChanged);
             this.spePRFPeriod.DataBindings.Add("Value", ParaUI.Instance.paraSignal, "PRFCycle", false, DataSourceUpdateMode.OnPropertyChanged);
             this.spePRFPaulseWidth.DataBindings.Add("Value", ParaUI.Instance.paraSignal, "PRFPulseWidth", false, DataSourceUpdateMode.OnPropertyChanged);

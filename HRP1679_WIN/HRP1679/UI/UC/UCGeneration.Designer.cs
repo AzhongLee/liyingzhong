@@ -31,12 +31,6 @@
             this.tlpGeneral = new System.Windows.Forms.TableLayoutPanel();
             this.label18 = new System.Windows.Forms.Label();
             this.cmbSignType = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbFcModel = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cmbSignDataType = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.lblPath = new System.Windows.Forms.Label();
-            this.btnePath = new DevExpress.XtraEditors.ButtonEdit();
             this.lblFreamewidth = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblFrameNum = new System.Windows.Forms.Label();
@@ -59,12 +53,13 @@
             this.spePRFNum = new DevExpress.XtraEditors.SpinEdit();
             this.speFrenquencyStep = new DevExpress.XtraEditors.SpinEdit();
             this.speFrameNum = new DevExpress.XtraEditors.SpinEdit();
+            this.cmbSignDataType = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblPath = new System.Windows.Forms.Label();
+            this.btnePath = new DevExpress.XtraEditors.ButtonEdit();
             this.ofdSignal = new System.Windows.Forms.OpenFileDialog();
             this.tlpGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSignType.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbSignDataType.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnePath.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speStartFc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFcModulRate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spePRFPeriod.Properties)).BeginInit();
@@ -76,6 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.spePRFNum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFrenquencyStep.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFrameNum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbSignDataType.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnePath.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpGeneral
@@ -112,8 +109,6 @@
             this.tlpGeneral.Controls.Add(this.spePRFNum, 1, 7);
             this.tlpGeneral.Controls.Add(this.speFrenquencyStep, 4, 7);
             this.tlpGeneral.Controls.Add(this.speFrameNum, 1, 8);
-            this.tlpGeneral.Controls.Add(this.label5, 0, 9);
-            this.tlpGeneral.Controls.Add(this.cmbFcModel, 1, 9);
             this.tlpGeneral.Controls.Add(this.cmbSignDataType, 4, 9);
             this.tlpGeneral.Controls.Add(this.label9, 3, 9);
             this.tlpGeneral.Controls.Add(this.lblPath, 0, 1);
@@ -133,7 +128,7 @@
             this.tlpGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpGeneral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tlpGeneral.Size = new System.Drawing.Size(583, 275);
+            this.tlpGeneral.Size = new System.Drawing.Size(584, 275);
             this.tlpGeneral.TabIndex = 0;
             // 
             // label18
@@ -174,120 +169,9 @@
             this.cmbSignType.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbSignType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbSignType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbSignType.Size = new System.Drawing.Size(130, 26);
+            this.cmbSignType.Size = new System.Drawing.Size(131, 26);
             this.cmbSignType.TabIndex = 13;
             this.cmbSignType.SelectedIndexChanged += new System.EventHandler(this.cmbSignType_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(2, 248);
-            this.label5.Margin = new System.Windows.Forms.Padding(2);
-            this.label5.MaximumSize = new System.Drawing.Size(195, 27);
-            this.label5.MinimumSize = new System.Drawing.Size(0, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 27);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "测频模式";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Visible = false;
-            // 
-            // cmbFcModel
-            // 
-            this.cmbFcModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbFcModel.EditValue = "测频输出";
-            this.cmbFcModel.Location = new System.Drawing.Point(153, 248);
-            this.cmbFcModel.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbFcModel.Name = "cmbFcModel";
-            this.cmbFcModel.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.cmbFcModel.Properties.Appearance.Options.UseFont = true;
-            this.cmbFcModel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbFcModel.Properties.Items.AddRange(new object[] {
-            "测频码输入",
-            "测频输出"});
-            this.cmbFcModel.Properties.LookAndFeel.SkinName = "Blue";
-            this.cmbFcModel.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.cmbFcModel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbFcModel.Size = new System.Drawing.Size(130, 26);
-            this.cmbFcModel.TabIndex = 15;
-            this.cmbFcModel.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(293, 248);
-            this.label9.Margin = new System.Windows.Forms.Padding(2);
-            this.label9.MaximumSize = new System.Drawing.Size(195, 27);
-            this.label9.MinimumSize = new System.Drawing.Size(0, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 27);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "信号数据类型";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label9.Visible = false;
-            // 
-            // cmbSignDataType
-            // 
-            this.cmbSignDataType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbSignDataType.EditValue = "手动配置";
-            this.cmbSignDataType.EnterMoveNextControl = true;
-            this.cmbSignDataType.Location = new System.Drawing.Point(444, 248);
-            this.cmbSignDataType.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbSignDataType.Name = "cmbSignDataType";
-            this.cmbSignDataType.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.cmbSignDataType.Properties.Appearance.Options.UseFont = true;
-            this.cmbSignDataType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbSignDataType.Properties.Items.AddRange(new object[] {
-            "手动配置",
-            "来自文件"});
-            this.cmbSignDataType.Properties.LookAndFeel.SkinName = "Blue";
-            this.cmbSignDataType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.cmbSignDataType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbSignDataType.Size = new System.Drawing.Size(137, 26);
-            this.cmbSignDataType.TabIndex = 17;
-            this.cmbSignDataType.Visible = false;
-            this.cmbSignDataType.SelectedIndexChanged += new System.EventHandler(this.cmbSignDataTypeSelectedIndexChanged);
-            // 
-            // lblPath
-            // 
-            this.lblPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPath.AutoSize = true;
-            this.lblPath.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.lblPath.ForeColor = System.Drawing.Color.White;
-            this.lblPath.Location = new System.Drawing.Point(2, 28);
-            this.lblPath.Margin = new System.Windows.Forms.Padding(2);
-            this.lblPath.MaximumSize = new System.Drawing.Size(195, 27);
-            this.lblPath.MinimumSize = new System.Drawing.Size(0, 27);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.Size = new System.Drawing.Size(147, 27);
-            this.lblPath.TabIndex = 18;
-            this.lblPath.Text = "文件路径";
-            this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // btnePath
-            // 
-            this.btnePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnePath.Location = new System.Drawing.Point(153, 28);
-            this.btnePath.Margin = new System.Windows.Forms.Padding(2);
-            this.btnePath.Name = "btnePath";
-            this.btnePath.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.btnePath.Properties.Appearance.Options.UseFont = true;
-            this.btnePath.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.btnePath.Properties.LookAndFeel.SkinName = "Blue";
-            this.btnePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.btnePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btnePath.Size = new System.Drawing.Size(130, 26);
-            this.btnePath.TabIndex = 23;
-            this.btnePath.EditValueChanged += new System.EventHandler(this.btnePath_EditValueChanged);
             // 
             // lblFreamewidth
             // 
@@ -311,7 +195,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(293, 121);
+            this.label4.Location = new System.Drawing.Point(294, 121);
             this.label4.Margin = new System.Windows.Forms.Padding(2);
             this.label4.MaximumSize = new System.Drawing.Size(195, 27);
             this.label4.MinimumSize = new System.Drawing.Size(0, 27);
@@ -357,7 +241,7 @@
             this.speStartFc.Properties.LookAndFeel.SkinName = "Blue";
             this.speStartFc.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.speStartFc.Properties.Mask.EditMask = "n";
-            this.speStartFc.Size = new System.Drawing.Size(130, 26);
+            this.speStartFc.Size = new System.Drawing.Size(131, 26);
             this.speStartFc.TabIndex = 22;
             // 
             // lblStartFc
@@ -382,7 +266,7 @@
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.lbl.ForeColor = System.Drawing.Color.White;
-            this.lbl.Location = new System.Drawing.Point(293, 59);
+            this.lbl.Location = new System.Drawing.Point(294, 59);
             this.lbl.Margin = new System.Windows.Forms.Padding(2);
             this.lbl.MaximumSize = new System.Drawing.Size(195, 27);
             this.lbl.MinimumSize = new System.Drawing.Size(0, 27);
@@ -400,7 +284,7 @@
             0,
             0,
             0});
-            this.speFcModulRate.Location = new System.Drawing.Point(444, 59);
+            this.speFcModulRate.Location = new System.Drawing.Point(445, 59);
             this.speFcModulRate.Margin = new System.Windows.Forms.Padding(2);
             this.speFcModulRate.Name = "speFcModulRate";
             this.speFcModulRate.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
@@ -450,7 +334,7 @@
             this.spePRFPeriod.Properties.LookAndFeel.SkinName = "Blue";
             this.spePRFPeriod.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.spePRFPeriod.Properties.Mask.EditMask = "n";
-            this.spePRFPeriod.Size = new System.Drawing.Size(128, 26);
+            this.spePRFPeriod.Size = new System.Drawing.Size(129, 26);
             this.spePRFPeriod.TabIndex = 20;
             // 
             // lblPRFPaulse
@@ -459,7 +343,7 @@
             this.lblPRFPaulse.AutoSize = true;
             this.lblPRFPaulse.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.lblPRFPaulse.ForeColor = System.Drawing.Color.White;
-            this.lblPRFPaulse.Location = new System.Drawing.Point(293, 152);
+            this.lblPRFPaulse.Location = new System.Drawing.Point(294, 152);
             this.lblPRFPaulse.Margin = new System.Windows.Forms.Padding(2);
             this.lblPRFPaulse.MaximumSize = new System.Drawing.Size(195, 27);
             this.lblPRFPaulse.MinimumSize = new System.Drawing.Size(0, 27);
@@ -477,7 +361,7 @@
             0,
             0,
             0});
-            this.spePRFPaulseWidth.Location = new System.Drawing.Point(445, 153);
+            this.spePRFPaulseWidth.Location = new System.Drawing.Point(446, 153);
             this.spePRFPaulseWidth.Name = "spePRFPaulseWidth";
             this.spePRFPaulseWidth.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.spePRFPaulseWidth.Properties.Appearance.Options.UseFont = true;
@@ -529,7 +413,7 @@
             this.lblCodeWord.AutoSize = true;
             this.lblCodeWord.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.lblCodeWord.ForeColor = System.Drawing.Color.White;
-            this.lblCodeWord.Location = new System.Drawing.Point(293, 90);
+            this.lblCodeWord.Location = new System.Drawing.Point(294, 90);
             this.lblCodeWord.Margin = new System.Windows.Forms.Padding(2);
             this.lblCodeWord.MaximumSize = new System.Drawing.Size(195, 27);
             this.lblCodeWord.MinimumSize = new System.Drawing.Size(0, 27);
@@ -545,7 +429,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(293, 184);
+            this.label3.Location = new System.Drawing.Point(294, 184);
             this.label3.Margin = new System.Windows.Forms.Padding(2);
             this.label3.MaximumSize = new System.Drawing.Size(195, 27);
             this.label3.MinimumSize = new System.Drawing.Size(0, 27);
@@ -585,7 +469,7 @@
             0,
             0,
             0});
-            this.speCodeLength.Size = new System.Drawing.Size(130, 26);
+            this.speCodeLength.Size = new System.Drawing.Size(131, 26);
             this.speCodeLength.TabIndex = 22;
             // 
             // speCodeWord
@@ -596,7 +480,7 @@
             0,
             0,
             0});
-            this.speCodeWord.Location = new System.Drawing.Point(444, 90);
+            this.speCodeWord.Location = new System.Drawing.Point(445, 90);
             this.speCodeWord.Margin = new System.Windows.Forms.Padding(2);
             this.speCodeWord.Name = "speCodeWord";
             this.speCodeWord.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
@@ -632,7 +516,7 @@
             this.speFramePeriod.Properties.LookAndFeel.SkinName = "Blue";
             this.speFramePeriod.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.speFramePeriod.Properties.Mask.EditMask = "n";
-            this.speFramePeriod.Size = new System.Drawing.Size(130, 26);
+            this.speFramePeriod.Size = new System.Drawing.Size(131, 26);
             this.speFramePeriod.TabIndex = 22;
             // 
             // speFramePaulseWidth
@@ -643,7 +527,7 @@
             0,
             0,
             0});
-            this.speFramePaulseWidth.Location = new System.Drawing.Point(444, 121);
+            this.speFramePaulseWidth.Location = new System.Drawing.Point(445, 121);
             this.speFramePaulseWidth.Margin = new System.Windows.Forms.Padding(2);
             this.speFramePaulseWidth.Name = "speFramePaulseWidth";
             this.speFramePaulseWidth.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
@@ -677,7 +561,7 @@
             this.spePRFNum.Properties.LookAndFeel.SkinName = "Blue";
             this.spePRFNum.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.spePRFNum.Properties.Mask.EditMask = "d";
-            this.spePRFNum.Size = new System.Drawing.Size(128, 26);
+            this.spePRFNum.Size = new System.Drawing.Size(129, 26);
             this.spePRFNum.TabIndex = 20;
             // 
             // speFrenquencyStep
@@ -688,7 +572,7 @@
             0,
             0,
             0});
-            this.speFrenquencyStep.Location = new System.Drawing.Point(445, 185);
+            this.speFrenquencyStep.Location = new System.Drawing.Point(446, 185);
             this.speFrenquencyStep.Name = "speFrenquencyStep";
             this.speFrenquencyStep.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.speFrenquencyStep.Properties.Appearance.Options.UseFont = true;
@@ -721,8 +605,81 @@
             this.speFrameNum.Properties.LookAndFeel.SkinName = "Blue";
             this.speFrameNum.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.speFrameNum.Properties.Mask.EditMask = "d";
-            this.speFrameNum.Size = new System.Drawing.Size(128, 26);
+            this.speFrameNum.Size = new System.Drawing.Size(129, 26);
             this.speFrameNum.TabIndex = 20;
+            // 
+            // cmbSignDataType
+            // 
+            this.cmbSignDataType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbSignDataType.EditValue = "手动配置";
+            this.cmbSignDataType.EnterMoveNextControl = true;
+            this.cmbSignDataType.Location = new System.Drawing.Point(445, 248);
+            this.cmbSignDataType.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSignDataType.Name = "cmbSignDataType";
+            this.cmbSignDataType.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.cmbSignDataType.Properties.Appearance.Options.UseFont = true;
+            this.cmbSignDataType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbSignDataType.Properties.Items.AddRange(new object[] {
+            "手动配置",
+            "来自文件"});
+            this.cmbSignDataType.Properties.LookAndFeel.SkinName = "Blue";
+            this.cmbSignDataType.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.cmbSignDataType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbSignDataType.Size = new System.Drawing.Size(137, 26);
+            this.cmbSignDataType.TabIndex = 17;
+            this.cmbSignDataType.Visible = false;
+            this.cmbSignDataType.SelectedIndexChanged += new System.EventHandler(this.cmbSignDataTypeSelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(294, 248);
+            this.label9.Margin = new System.Windows.Forms.Padding(2);
+            this.label9.MaximumSize = new System.Drawing.Size(195, 27);
+            this.label9.MinimumSize = new System.Drawing.Size(0, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 27);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "信号数据类型";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label9.Visible = false;
+            // 
+            // lblPath
+            // 
+            this.lblPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPath.AutoSize = true;
+            this.lblPath.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.lblPath.ForeColor = System.Drawing.Color.White;
+            this.lblPath.Location = new System.Drawing.Point(2, 28);
+            this.lblPath.Margin = new System.Windows.Forms.Padding(2);
+            this.lblPath.MaximumSize = new System.Drawing.Size(195, 27);
+            this.lblPath.MinimumSize = new System.Drawing.Size(0, 27);
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(147, 27);
+            this.lblPath.TabIndex = 18;
+            this.lblPath.Text = "文件路径";
+            this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnePath
+            // 
+            this.btnePath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnePath.Location = new System.Drawing.Point(153, 28);
+            this.btnePath.Margin = new System.Windows.Forms.Padding(2);
+            this.btnePath.Name = "btnePath";
+            this.btnePath.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.btnePath.Properties.Appearance.Options.UseFont = true;
+            this.btnePath.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.btnePath.Properties.LookAndFeel.SkinName = "Blue";
+            this.btnePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.btnePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.btnePath.Size = new System.Drawing.Size(131, 26);
+            this.btnePath.TabIndex = 23;
+            this.btnePath.EditValueChanged += new System.EventHandler(this.btnePath_EditValueChanged);
             // 
             // UCGeneration
             // 
@@ -733,13 +690,10 @@
             this.Controls.Add(this.tlpGeneral);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCGeneration";
-            this.Size = new System.Drawing.Size(583, 275);
+            this.Size = new System.Drawing.Size(584, 275);
             this.tlpGeneral.ResumeLayout(false);
             this.tlpGeneral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSignType.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbSignDataType.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnePath.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speStartFc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFcModulRate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spePRFPeriod.Properties)).EndInit();
@@ -751,6 +705,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.spePRFNum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFrenquencyStep.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speFrameNum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbSignDataType.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnePath.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -761,8 +717,6 @@
         private System.Windows.Forms.TableLayoutPanel tlpGeneral;
         private System.Windows.Forms.Label label18;
         private DevExpress.XtraEditors.ComboBoxEdit cmbSignType;
-        private System.Windows.Forms.Label label5;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbFcModel;
         private System.Windows.Forms.Label label9;
         private DevExpress.XtraEditors.ComboBoxEdit cmbSignDataType;
         private System.Windows.Forms.Label lblPath;

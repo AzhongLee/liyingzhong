@@ -22,6 +22,16 @@ namespace HRP1679.DAL.Para
         private uint clockReference;
         private uint clockFrequency;
         private uint ceofCut;
+        private uint detectionswitch;
+
+        /// <summary>
+        /// 检波选择
+        /// </summary>
+        public uint Detectionswitch
+        {
+            get { return detectionswitch; }
+            set { detectionswitch = value; }
+        }
 
         /// <summary>
         /// 外参考频率

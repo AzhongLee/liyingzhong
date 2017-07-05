@@ -74,12 +74,12 @@ namespace HRP1679.UI
             this.cmbPRF.DataBindings.Add("SelectedIndex" , ParaUI.Instance.paraDebug , "PRFModel",false,DataSourceUpdateMode.OnPropertyChanged);
             this.cmbClock.DataBindings.Add("SelectedIndex" , ParaUI.Instance.paraDebug , "ClockReference" , false , DataSourceUpdateMode.OnPropertyChanged);
             this.speClockReference.DataBindings.Add("Value" , ParaUI.Instance.paraDebug , "ClockFrequency" , false , DataSourceUpdateMode.OnPropertyChanged);
-            this.speDDS.DataBindings.Add("Value" , ParaUI.Instance.paraDebug , "FrequencyDDS" , false , DataSourceUpdateMode.OnPropertyChanged);
             this.speDetect.DataBindings.Add("Value" , ParaUI.Instance.paraDebug , "Detection" , false , DataSourceUpdateMode.OnPropertyChanged);
             this.speInherentDelay.DataBindings.Add("Value" , ParaUI.Instance.paraDebug , "InherentDelay" , false , DataSourceUpdateMode.OnPropertyChanged);
             this.cmbDataSourceSet.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraCollect, "DataResource", false, DataSourceUpdateMode.OnPropertyChanged);
             this.speCeofCut.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "CeofCut", false, DataSourceUpdateMode.OnPropertyChanged);
-            this.cmbDetection.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraDebug, "Detection", false, DataSourceUpdateMode.OnPropertyChanged);
+            this.cmbDetection.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraDebug, "Detectionswitch", false, DataSourceUpdateMode.OnPropertyChanged);
+            this.cmbFcModel.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraCollect, "FrequencyModel", false, DataSourceUpdateMode.OnPropertyChanged);
 
             this.cmbTimingSwitch.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraDebug, "TimingSwith", false, DataSourceUpdateMode.OnPropertyChanged);
             this.speTimeingInterval.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "TimingInterval", false, DataSourceUpdateMode.OnPropertyChanged);

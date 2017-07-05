@@ -38,7 +38,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmbPRF = new DevExpress.XtraEditors.ComboBoxEdit();
             this.speDetect = new DevExpress.XtraEditors.SpinEdit();
-            this.speDDS = new DevExpress.XtraEditors.SpinEdit();
             this.cmbClock = new DevExpress.XtraEditors.ComboBoxEdit();
             this.speClockReference = new DevExpress.XtraEditors.SpinEdit();
             this.label7 = new System.Windows.Forms.Label();
@@ -75,11 +74,11 @@
             this.cmbDetection = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label24 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmbFcModel = new DevExpress.XtraEditors.ComboBoxEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speInherentDelay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRF.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speDetect.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speDDS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speClockReference.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDataSourceSet.Properties)).BeginInit();
@@ -97,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.speTargetDis2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOffOn.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDetection.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -118,7 +118,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.cmbPRF, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.speDetect, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.speDDS, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.cmbClock, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.speClockReference, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 8);
@@ -155,6 +154,7 @@
             this.tableLayoutPanel1.Controls.Add(this.cmbDetection, 1, 13);
             this.tableLayoutPanel1.Controls.Add(this.label24, 0, 12);
             this.tableLayoutPanel1.Controls.Add(this.button1, 3, 18);
+            this.tableLayoutPanel1.Controls.Add(this.cmbFcModel, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -258,9 +258,9 @@
             this.label5.Location = new System.Drawing.Point(2, 243);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 32);
+            this.label5.Size = new System.Drawing.Size(65, 32);
             this.label5.TabIndex = 2;
-            this.label5.Text = "DDS频率[MHz]";
+            this.label5.Text = "测频模式";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
@@ -331,28 +331,6 @@
             this.speDetect.Properties.Mask.EditMask = "n";
             this.speDetect.Size = new System.Drawing.Size(149, 26);
             this.speDetect.TabIndex = 12;
-            // 
-            // speDDS
-            // 
-            this.speDDS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.speDDS.EditValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.speDDS.Location = new System.Drawing.Point(140, 246);
-            this.speDDS.Name = "speDDS";
-            this.speDDS.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.speDDS.Properties.Appearance.Options.UseFont = true;
-            this.speDDS.Properties.Appearance.Options.UseTextOptions = true;
-            this.speDDS.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.speDDS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.speDDS.Properties.LookAndFeel.SkinName = "Blue";
-            this.speDDS.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.speDDS.Properties.Mask.EditMask = "n";
-            this.speDDS.Size = new System.Drawing.Size(149, 26);
-            this.speDDS.TabIndex = 12;
             // 
             // cmbClock
             // 
@@ -964,7 +942,7 @@
             this.cmbDetection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDetection.Properties.Items.AddRange(new object[] {
-            "内参产生",
+            "内部产生",
             "外部PRF"});
             this.cmbDetection.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbDetection.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -1002,6 +980,26 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cmbFcModel
+            // 
+            this.cmbFcModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbFcModel.EditValue = "测频";
+            this.cmbFcModel.Location = new System.Drawing.Point(139, 246);
+            this.cmbFcModel.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbFcModel.Name = "cmbFcModel";
+            this.cmbFcModel.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.cmbFcModel.Properties.Appearance.Options.UseFont = true;
+            this.cmbFcModel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbFcModel.Properties.Items.AddRange(new object[] {
+            "不测频",
+            "测频"});
+            this.cmbFcModel.Properties.LookAndFeel.SkinName = "Blue";
+            this.cmbFcModel.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.cmbFcModel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbFcModel.Size = new System.Drawing.Size(151, 26);
+            this.cmbFcModel.TabIndex = 16;
+            // 
             // FormDebug
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1018,7 +1016,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.speInherentDelay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRF.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speDetect.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.speDDS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speClockReference.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDataSourceSet.Properties)).EndInit();
@@ -1036,6 +1033,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.speTargetDis2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbOffOn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDetection.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1053,7 +1051,6 @@
         private System.Windows.Forms.Label label7;
         private DevExpress.XtraEditors.ComboBoxEdit cmbPRF;
         private DevExpress.XtraEditors.SpinEdit speDetect;
-        private DevExpress.XtraEditors.SpinEdit speDDS;
         private DevExpress.XtraEditors.ComboBoxEdit cmbClock;
         private DevExpress.XtraEditors.SpinEdit speClockReference;
         private System.Windows.Forms.Button button1;
@@ -1089,5 +1086,6 @@
         private DevExpress.XtraEditors.ComboBoxEdit cmbOffOn;
         private DevExpress.XtraEditors.ComboBoxEdit cmbDetection;
         private System.Windows.Forms.Label label24;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbFcModel;
     }
 }

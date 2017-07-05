@@ -77,12 +77,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 6F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 191F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.dgvSignCollect, 1, 5);
@@ -101,7 +100,7 @@
             this.tableLayoutPanel1.Controls.Add(this.comboBoxEdit3, 5, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -125,7 +124,7 @@
             this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 48);
+            this.label1.Size = new System.Drawing.Size(462, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = " 参数配置";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,10 +139,10 @@
             this.panel1.Controls.Add(this.btnErase);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(16, 386);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.tableLayoutPanel1.SetRowSpan(this.panel1, 2);
-            this.panel1.Size = new System.Drawing.Size(521, 74);
+            this.panel1.Size = new System.Drawing.Size(518, 74);
             this.panel1.TabIndex = 4;
             // 
             // btneUpLoadFilePath
@@ -151,7 +150,7 @@
             this.btneUpLoadFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btneUpLoadFilePath.Location = new System.Drawing.Point(107, 5);
-            this.btneUpLoadFilePath.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btneUpLoadFilePath.Margin = new System.Windows.Forms.Padding(2);
             this.btneUpLoadFilePath.Name = "btneUpLoadFilePath";
             this.btneUpLoadFilePath.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.btneUpLoadFilePath.Properties.Appearance.Options.UseFont = true;
@@ -160,7 +159,7 @@
             this.btneUpLoadFilePath.Properties.LookAndFeel.SkinName = "Blue";
             this.btneUpLoadFilePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btneUpLoadFilePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btneUpLoadFilePath.Size = new System.Drawing.Size(414, 26);
+            this.btneUpLoadFilePath.Size = new System.Drawing.Size(411, 26);
             this.btneUpLoadFilePath.TabIndex = 12;
             this.btneUpLoadFilePath.Click += new System.EventHandler(this.btneFilePath_Click);
             // 
@@ -173,7 +172,7 @@
             this.label2.Location = new System.Drawing.Point(2, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 23);
+            this.label2.Size = new System.Drawing.Size(87, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "上传文件路径";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +188,7 @@
             this.btnUpLoad.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.btnUpLoad.ForeColor = System.Drawing.Color.White;
             this.btnUpLoad.Location = new System.Drawing.Point(5, 40);
-            this.btnUpLoad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpLoad.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpLoad.Name = "btnUpLoad";
             this.btnUpLoad.Size = new System.Drawing.Size(71, 26);
             this.btnUpLoad.TabIndex = 3;
@@ -210,7 +209,7 @@
             this.btnEraseAll.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.btnEraseAll.ForeColor = System.Drawing.Color.White;
             this.btnEraseAll.Location = new System.Drawing.Point(224, 40);
-            this.btnEraseAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEraseAll.Margin = new System.Windows.Forms.Padding(2);
             this.btnEraseAll.Name = "btnEraseAll";
             this.btnEraseAll.Size = new System.Drawing.Size(71, 26);
             this.btnEraseAll.TabIndex = 3;
@@ -231,7 +230,7 @@
             this.btnErase.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.btnErase.ForeColor = System.Drawing.Color.White;
             this.btnErase.Location = new System.Drawing.Point(115, 40);
-            this.btnErase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnErase.Margin = new System.Windows.Forms.Padding(2);
             this.btnErase.Name = "btnErase";
             this.btnErase.Size = new System.Drawing.Size(71, 26);
             this.btnErase.TabIndex = 3;
@@ -267,7 +266,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.dgvSignCollect, 7);
             this.dgvSignCollect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSignCollect.Location = new System.Drawing.Point(16, 179);
-            this.dgvSignCollect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvSignCollect.Margin = new System.Windows.Forms.Padding(2);
             this.dgvSignCollect.MultiSelect = false;
             this.dgvSignCollect.Name = "dgvSignCollect";
             this.dgvSignCollect.ReadOnly = true;
@@ -284,7 +283,7 @@
             this.dgvSignCollect.RowTemplate.Height = 27;
             this.dgvSignCollect.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvSignCollect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSignCollect.Size = new System.Drawing.Size(521, 203);
+            this.dgvSignCollect.Size = new System.Drawing.Size(518, 203);
             this.dgvSignCollect.TabIndex = 5;
             // 
             // cExNum
@@ -348,7 +347,7 @@
             this.cmbWorkMode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbWorkMode.EditValue = "和差差三路";
             this.cmbWorkMode.Location = new System.Drawing.Point(172, 50);
-            this.cmbWorkMode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbWorkMode.Margin = new System.Windows.Forms.Padding(2);
             this.cmbWorkMode.Name = "cmbWorkMode";
             this.cmbWorkMode.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmbWorkMode.Properties.Appearance.Options.UseFont = true;
@@ -361,7 +360,7 @@
             this.cmbWorkMode.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbWorkMode.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbWorkMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbWorkMode.Size = new System.Drawing.Size(81, 26);
+            this.cmbWorkMode.Size = new System.Drawing.Size(96, 26);
             this.cmbWorkMode.TabIndex = 11;
             // 
             // label3
@@ -374,7 +373,7 @@
             this.label3.Location = new System.Drawing.Point(2, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(477, 48);
+            this.label3.Size = new System.Drawing.Size(462, 48);
             this.label3.TabIndex = 12;
             this.label3.Text = " 存储管理";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -386,7 +385,7 @@
             this.label17.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(16, 50);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label17.Margin = new System.Windows.Forms.Padding(2);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(152, 23);
             this.label17.TabIndex = 13;
@@ -400,7 +399,7 @@
             this.label4.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(16, 77);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label4.Margin = new System.Windows.Forms.Padding(2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(152, 23);
             this.label4.TabIndex = 13;
@@ -414,7 +413,7 @@
             this.label5.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(16, 104);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label5.Margin = new System.Windows.Forms.Padding(2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 23);
             this.label5.TabIndex = 13;
@@ -427,10 +426,10 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(263, 50);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label7.Location = new System.Drawing.Point(278, 50);
+            this.label7.Margin = new System.Windows.Forms.Padding(2);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 23);
+            this.label7.Size = new System.Drawing.Size(151, 23);
             this.label7.TabIndex = 13;
             this.label7.Text = "通道采集使能";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -441,10 +440,10 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(263, 77);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label8.Location = new System.Drawing.Point(278, 77);
+            this.label8.Margin = new System.Windows.Forms.Padding(2);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 23);
+            this.label8.Size = new System.Drawing.Size(151, 23);
             this.label8.TabIndex = 13;
             this.label8.Text = "通道2数据类型";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -459,10 +458,10 @@
             this.chbAD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chbAD1.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chbAD1.ForeColor = System.Drawing.Color.White;
-            this.chbAD1.Location = new System.Drawing.Point(454, 50);
-            this.chbAD1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbAD1.Location = new System.Drawing.Point(433, 50);
+            this.chbAD1.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD1.Name = "chbAD1";
-            this.chbAD1.Size = new System.Drawing.Size(25, 23);
+            this.chbAD1.Size = new System.Drawing.Size(31, 23);
             this.chbAD1.TabIndex = 14;
             this.chbAD1.Text = "AD1";
             this.chbAD1.UseVisualStyleBackColor = true;
@@ -478,10 +477,10 @@
             this.chbAD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chbAD2.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chbAD2.ForeColor = System.Drawing.Color.White;
-            this.chbAD2.Location = new System.Drawing.Point(483, 50);
-            this.chbAD2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbAD2.Location = new System.Drawing.Point(468, 50);
+            this.chbAD2.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD2.Name = "chbAD2";
-            this.chbAD2.Size = new System.Drawing.Size(25, 23);
+            this.chbAD2.Size = new System.Drawing.Size(31, 23);
             this.chbAD2.TabIndex = 15;
             this.chbAD2.Text = "AD2";
             this.chbAD2.UseVisualStyleBackColor = false;
@@ -497,10 +496,10 @@
             this.chbAD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chbAD3.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.chbAD3.ForeColor = System.Drawing.Color.White;
-            this.chbAD3.Location = new System.Drawing.Point(512, 50);
-            this.chbAD3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbAD3.Location = new System.Drawing.Point(503, 50);
+            this.chbAD3.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD3.Name = "chbAD3";
-            this.chbAD3.Size = new System.Drawing.Size(25, 23);
+            this.chbAD3.Size = new System.Drawing.Size(31, 23);
             this.chbAD3.TabIndex = 16;
             this.chbAD3.Text = "AD3";
             this.chbAD3.UseVisualStyleBackColor = false;
@@ -511,7 +510,7 @@
             this.comboBoxEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxEdit1.EditValue = "雷达发射信号";
             this.comboBoxEdit1.Location = new System.Drawing.Point(172, 77);
-            this.comboBoxEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
             this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
@@ -526,7 +525,7 @@
             this.comboBoxEdit1.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit1.Size = new System.Drawing.Size(81, 26);
+            this.comboBoxEdit1.Size = new System.Drawing.Size(96, 26);
             this.comboBoxEdit1.TabIndex = 11;
             // 
             // comboBoxEdit2
@@ -534,7 +533,7 @@
             this.comboBoxEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxEdit2.EditValue = "雷达发射信号";
             this.comboBoxEdit2.Location = new System.Drawing.Point(172, 104);
-            this.comboBoxEdit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEdit2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit2.Name = "comboBoxEdit2";
             this.comboBoxEdit2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.comboBoxEdit2.Properties.Appearance.Options.UseFont = true;
@@ -549,7 +548,7 @@
             this.comboBoxEdit2.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit2.Size = new System.Drawing.Size(81, 26);
+            this.comboBoxEdit2.Size = new System.Drawing.Size(96, 26);
             this.comboBoxEdit2.TabIndex = 11;
             // 
             // comboBoxEdit3
@@ -557,8 +556,8 @@
             this.tableLayoutPanel1.SetColumnSpan(this.comboBoxEdit3, 3);
             this.comboBoxEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboBoxEdit3.EditValue = "雷达发射信号";
-            this.comboBoxEdit3.Location = new System.Drawing.Point(454, 77);
-            this.comboBoxEdit3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEdit3.Location = new System.Drawing.Point(433, 77);
+            this.comboBoxEdit3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit3.Name = "comboBoxEdit3";
             this.comboBoxEdit3.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.comboBoxEdit3.Properties.Appearance.Options.UseFont = true;
@@ -573,7 +572,7 @@
             this.comboBoxEdit3.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit3.Size = new System.Drawing.Size(83, 26);
+            this.comboBoxEdit3.Size = new System.Drawing.Size(101, 26);
             this.comboBoxEdit3.TabIndex = 11;
             // 
             // UCCollect
@@ -582,7 +581,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCCollect";
             this.Size = new System.Drawing.Size(555, 462);
             this.tableLayoutPanel1.ResumeLayout(false);

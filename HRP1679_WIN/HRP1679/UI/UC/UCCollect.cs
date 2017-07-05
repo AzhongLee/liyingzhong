@@ -83,6 +83,7 @@ namespace HRP1679.UI.UC
           //  this.dgvSignCollect.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
         }
         #endregion
+
         #region"通道选择样式"
         private void chbCheckedChanged(object sender, EventArgs e)
         {
@@ -93,6 +94,7 @@ namespace HRP1679.UI.UC
                 chb.ForeColor = Color.White;
         }
         #endregion
+
         #region"参数绑定"
         private void DataBinding()
         {
@@ -100,7 +102,7 @@ namespace HRP1679.UI.UC
           //  this.dgvSignCollect.DataSource = ParaUI.Instance.paraCollect.DMAParas;
             this.btneUpLoadFilePath.DataBindings.Add("Text" , ParaUI.Instance.paraCollect , "UpLoadPath",false,DataSourceUpdateMode.OnPropertyChanged);
             this.cmbWorkMode.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraCollect, "WorkModel", false, DataSourceUpdateMode.OnPropertyChanged);
-            this.chbAD3.DataBindings.Add("Checked", ParaUI.Instance.paraCollect, "IADch3", false, DataSourceUpdateMode.Never);
+            this.chbAD3.DataBindings.Add("Checked", ParaUI.Instance.paraCollect, "IADch3", false, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         #endregion
@@ -160,6 +162,7 @@ namespace HRP1679.UI.UC
                 ParaUI.Instance.paraCollect.CleanAll = 1;
             EventDef.EraseData();
         }
+
         #region"窗口样式设置,防止闪屏"
         protected override CreateParams CreateParams
         {
