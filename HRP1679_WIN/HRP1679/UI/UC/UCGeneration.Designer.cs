@@ -273,7 +273,7 @@
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(147, 27);
             this.lbl.TabIndex = 26;
-            this.lbl.Text = "带宽[dBm]";
+            this.lbl.Text = "带宽[MHz]";
             this.lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // speFcModulRate
@@ -679,7 +679,7 @@
             this.btnePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnePath.Size = new System.Drawing.Size(131, 26);
             this.btnePath.TabIndex = 23;
-            this.btnePath.EditValueChanged += new System.EventHandler(this.btnePath_EditValueChanged);
+            this.btnePath.Click += new System.EventHandler(this.btnePath_EditValueChanged);
             // 
             // UCGeneration
             // 
