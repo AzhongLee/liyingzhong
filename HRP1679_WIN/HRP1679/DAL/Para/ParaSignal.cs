@@ -42,8 +42,10 @@ namespace HRP1679.DAL.Para
         public string SingalDataFilePath
         {
             get { return singalDataFilePath; }
-            set { if (File.Exists(value))  singalDataFilePath = value;
-            else LoggingService.logShowed("不存在该数据源文件路径：" + value , InformationType.Error , InformationDisplayMode.FormList);
+            set
+            {
+                if (File.Exists(value)) singalDataFilePath = value;
+                else LoggingService.logShowed("不存在该数据源文件路径：" + value, InformationType.Error, InformationDisplayMode.FormList);
             }
         }
 
@@ -73,7 +75,7 @@ namespace HRP1679.DAL.Para
             get { return pRFCycle; }
             set
             {
-                if (value >= 20 && value <= 1000)
+                if (value >= 0 && value <= 1000)
                 {
                     pRFCycle = value;
                 }
@@ -111,49 +113,72 @@ namespace HRP1679.DAL.Para
             set { bandWidth = value; }
         }
         /// <summary>
-        /// 
+        /// frame周期
         /// </summary>
-        public uint FramePeriod { get { return framePeriod; } set { framePeriod = value; } }
-
+        public uint FramePeriod
+        {
+            get
+            {
+                return framePeriod;
+            }
+            set
+            {
+                if (value > pRFCycle * prfNum + 1)
+                    framePeriod = value;
+            }
+        }
+        /// <summary>
+        /// frame脉宽
+        /// </summary>
         public uint FramePulseWidth { get { return framePulseWidth; } set { framePulseWidth = value; } }
-
+        /// <summary>
+        /// 组内帧个数
+        /// </summary>
         public uint FrameNum { get { return frameNum; } set { frameNum = value; } }
-
+        /// <summary>
+        /// 帧内prf个数
+        /// </summary>
         public uint PrfNum { get { return prfNum; } set { prfNum = value; } }
-        
+        /// <summary>
+        /// 编码长度
+        /// </summary>
         public uint CodeLength { get { return codeLength; } set { codeLength = value; } }
 
-        public uint CodeWord { get { return codeWord; }
+        public uint CodeWord
+        {
+            get { return codeWord; }
             set
+            {
+                codeWord = value;
+            }
+        }
+        /// <summary>
+        /// 编码字符取有效位
+        /// </summary>
+        public uint CodeWordEffect
+        {
+            get
             {
                 switch (CodeLength)
                 {
                     case 0:
-                        codeWord = 0;
-                        break;
+                        return 0;
                     case 1:
-                        codeWord = bianma(value.ToString()) & 0x1;
-                        break;
+                        return bianma(codeWord.ToString()) & 0x1;
                     case 2:
-                        codeWord = bianma(value.ToString()) & 0x3;
-                        break;
+                        return bianma(codeWord.ToString()) & 0x3;
                     case 3:
-                        codeWord = bianma(value.ToString()) & 0x7;
-                        break;
+                        return bianma(codeWord.ToString()) & 0x7;
                     case 4:
-                        codeWord = bianma(value.ToString()) & 0x15;
-                        break;
+                        return bianma(codeWord.ToString()) & 0x15;
                     case 5:
-                        codeWord = bianma(value.ToString()) & 0x31;
-                        break;
+                        return bianma(codeWord.ToString()) & 0x31;
                     default:
-                        break;
-
+                        return 0;
                 }
-
-                codeWord = value;
             }
         }
+
 
         public float FrequencyStep { get { return frequencyStep; } set { frequencyStep = value; } }
 
@@ -164,7 +189,7 @@ namespace HRP1679.DAL.Para
         /// <returns></returns>
         private static uint bianma(string s)
         {
-            byte[] data = Encoding.Unicode.GetBytes(s);
+            //  byte[] data = Encoding.Unicode.GetBytes(s);
             return Convert.ToUInt32(s, 2);
         }
     }

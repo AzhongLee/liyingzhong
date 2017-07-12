@@ -81,7 +81,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.dgvSignCollect, 1, 5);
@@ -124,7 +124,7 @@
             this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 48);
+            this.label1.Size = new System.Drawing.Size(461, 48);
             this.label1.TabIndex = 0;
             this.label1.Text = " 参数配置";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,7 +142,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.tableLayoutPanel1.SetRowSpan(this.panel1, 2);
-            this.panel1.Size = new System.Drawing.Size(518, 74);
+            this.panel1.Size = new System.Drawing.Size(515, 74);
             this.panel1.TabIndex = 4;
             // 
             // btneUpLoadFilePath
@@ -159,7 +159,7 @@
             this.btneUpLoadFilePath.Properties.LookAndFeel.SkinName = "Blue";
             this.btneUpLoadFilePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btneUpLoadFilePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btneUpLoadFilePath.Size = new System.Drawing.Size(411, 26);
+            this.btneUpLoadFilePath.Size = new System.Drawing.Size(408, 26);
             this.btneUpLoadFilePath.TabIndex = 12;
             this.btneUpLoadFilePath.Click += new System.EventHandler(this.btneFilePath_Click);
             // 
@@ -172,7 +172,7 @@
             this.label2.Location = new System.Drawing.Point(2, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 23);
+            this.label2.Size = new System.Drawing.Size(84, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "上传文件路径";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,7 +283,7 @@
             this.dgvSignCollect.RowTemplate.Height = 27;
             this.dgvSignCollect.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgvSignCollect.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSignCollect.Size = new System.Drawing.Size(518, 203);
+            this.dgvSignCollect.Size = new System.Drawing.Size(515, 203);
             this.dgvSignCollect.TabIndex = 5;
             // 
             // cExNum
@@ -349,7 +349,7 @@
             this.cmbWorkMode.Location = new System.Drawing.Point(172, 50);
             this.cmbWorkMode.Margin = new System.Windows.Forms.Padding(2);
             this.cmbWorkMode.Name = "cmbWorkMode";
-            this.cmbWorkMode.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.cmbWorkMode.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.cmbWorkMode.Properties.Appearance.Options.UseFont = true;
             this.cmbWorkMode.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.cmbWorkMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -360,7 +360,7 @@
             this.cmbWorkMode.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbWorkMode.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbWorkMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbWorkMode.Size = new System.Drawing.Size(96, 26);
+            this.cmbWorkMode.Size = new System.Drawing.Size(96, 29);
             this.cmbWorkMode.TabIndex = 11;
             // 
             // label3
@@ -373,7 +373,7 @@
             this.label3.Location = new System.Drawing.Point(2, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(462, 48);
+            this.label3.Size = new System.Drawing.Size(461, 48);
             this.label3.TabIndex = 12;
             this.label3.Text = " 存储管理";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -382,7 +382,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label17.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(16, 50);
             this.label17.Margin = new System.Windows.Forms.Padding(2);
@@ -396,7 +396,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(16, 77);
             this.label4.Margin = new System.Windows.Forms.Padding(2);
@@ -410,7 +410,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(16, 104);
             this.label5.Margin = new System.Windows.Forms.Padding(2);
@@ -424,7 +424,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(278, 50);
             this.label7.Margin = new System.Windows.Forms.Padding(2);
@@ -438,7 +438,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label8.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(278, 77);
             this.label8.Margin = new System.Windows.Forms.Padding(2);
@@ -456,12 +456,12 @@
             this.chbAD1.Dock = System.Windows.Forms.DockStyle.Left;
             this.chbAD1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.chbAD1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbAD1.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chbAD1.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.chbAD1.ForeColor = System.Drawing.Color.White;
             this.chbAD1.Location = new System.Drawing.Point(433, 50);
             this.chbAD1.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD1.Name = "chbAD1";
-            this.chbAD1.Size = new System.Drawing.Size(31, 23);
+            this.chbAD1.Size = new System.Drawing.Size(30, 23);
             this.chbAD1.TabIndex = 14;
             this.chbAD1.Text = "AD1";
             this.chbAD1.UseVisualStyleBackColor = true;
@@ -475,12 +475,12 @@
             this.chbAD2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chbAD2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.chbAD2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbAD2.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chbAD2.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.chbAD2.ForeColor = System.Drawing.Color.White;
-            this.chbAD2.Location = new System.Drawing.Point(468, 50);
+            this.chbAD2.Location = new System.Drawing.Point(467, 50);
             this.chbAD2.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD2.Name = "chbAD2";
-            this.chbAD2.Size = new System.Drawing.Size(31, 23);
+            this.chbAD2.Size = new System.Drawing.Size(30, 23);
             this.chbAD2.TabIndex = 15;
             this.chbAD2.Text = "AD2";
             this.chbAD2.UseVisualStyleBackColor = false;
@@ -494,12 +494,12 @@
             this.chbAD3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chbAD3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.chbAD3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chbAD3.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.chbAD3.Font = new System.Drawing.Font("微软雅黑", 12F);
             this.chbAD3.ForeColor = System.Drawing.Color.White;
-            this.chbAD3.Location = new System.Drawing.Point(503, 50);
+            this.chbAD3.Location = new System.Drawing.Point(501, 50);
             this.chbAD3.Margin = new System.Windows.Forms.Padding(2);
             this.chbAD3.Name = "chbAD3";
-            this.chbAD3.Size = new System.Drawing.Size(31, 23);
+            this.chbAD3.Size = new System.Drawing.Size(30, 23);
             this.chbAD3.TabIndex = 16;
             this.chbAD3.Text = "AD3";
             this.chbAD3.UseVisualStyleBackColor = false;
@@ -512,7 +512,7 @@
             this.comboBoxEdit1.Location = new System.Drawing.Point(172, 77);
             this.comboBoxEdit1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
             this.comboBoxEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -525,7 +525,7 @@
             this.comboBoxEdit1.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit1.Size = new System.Drawing.Size(96, 26);
+            this.comboBoxEdit1.Size = new System.Drawing.Size(96, 29);
             this.comboBoxEdit1.TabIndex = 11;
             // 
             // comboBoxEdit2
@@ -535,7 +535,7 @@
             this.comboBoxEdit2.Location = new System.Drawing.Point(172, 104);
             this.comboBoxEdit2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.comboBoxEdit2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.comboBoxEdit2.Properties.Appearance.Options.UseFont = true;
             this.comboBoxEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -548,7 +548,7 @@
             this.comboBoxEdit2.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit2.Size = new System.Drawing.Size(96, 26);
+            this.comboBoxEdit2.Size = new System.Drawing.Size(96, 29);
             this.comboBoxEdit2.TabIndex = 11;
             // 
             // comboBoxEdit3
@@ -559,7 +559,7 @@
             this.comboBoxEdit3.Location = new System.Drawing.Point(433, 77);
             this.comboBoxEdit3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.comboBoxEdit3.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.comboBoxEdit3.Properties.Appearance.Options.UseFont = true;
             this.comboBoxEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -572,7 +572,7 @@
             this.comboBoxEdit3.Properties.LookAndFeel.SkinName = "Blue";
             this.comboBoxEdit3.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.comboBoxEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.comboBoxEdit3.Size = new System.Drawing.Size(101, 26);
+            this.comboBoxEdit3.Size = new System.Drawing.Size(98, 29);
             this.comboBoxEdit3.TabIndex = 11;
             // 
             // UCCollect

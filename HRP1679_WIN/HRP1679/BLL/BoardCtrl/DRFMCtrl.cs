@@ -352,7 +352,7 @@ namespace HRP1679.BLL.BoardCtrl
             ctrlWord = (uint)(paraUI.paraSignal.PRFPulseWidth * 300);
             CtrlW.Add(ctrlWord);
             //起始频率5
-            if ((paraUI.paraSignal.SignalType == 1) || (paraUI.paraSignal.SignalType == 2)) //修改命令字 20170704
+            if ((paraUI.paraSignal.SignalType == 1) || (paraUI.paraSignal.SignalType == 2)|| (paraUI.paraSignal.SignalType == 4)) //修改命令字 20170704
             {
                 //起始频率5
                 ctrlWord = (uint)(paraUI.paraSignal.StartFrequency * 1e6 / ConstData.Fs * Math.Pow(2, 32));
@@ -391,7 +391,7 @@ namespace HRP1679.BLL.BoardCtrl
             ctrlWord = paraUI.paraSignal.CodeLength;
             CtrlW.Add(ctrlWord);
             //codeword
-            ctrlWord = paraUI.paraSignal.CodeWord;
+            ctrlWord = paraUI.paraSignal.CodeWordEffect;
             CtrlW.Add(ctrlWord);
             //fcstep      20170704
             ctrlWord = (uint)(paraUI.paraSignal.FrequencyStep * Math.Pow(10, 6) / ConstData.Fs * Math.Pow(2, 32));

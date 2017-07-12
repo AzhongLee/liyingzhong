@@ -75,36 +75,17 @@ namespace HRP1679.BLL.Other
             new Thread(
              new ThreadStart((Action)(() =>
              {
-                 try
-                 {
-                     List<SelfCheckResult> result = DRFMCtrl.Instance.Dev800M.SelfCheck();
-                     if (result[0].Result && result[1].Result )
-                     {
-                         LoggingService.logShowed("基带自检成功！" , InformationType.Success , InformationDisplayMode.FormList);
-                         ParaUI.Instance.paraStatus.IDRFMStatus = true;
-                     }
-                     else
-                     {
-                         LoggingService.logShowed("基带自检失败！" , InformationType.Error , InformationDisplayMode.FormList);
-                         ParaUI.Instance.paraStatus.IDRFMStatus = false;
-                     }
-                 }
-                 catch (System.Exception ex)
-                 {
-                     ParaUI.Instance.paraStatus.IDRFMStatus = false;
-                     System.Windows.Forms.MessageBox.Show("800M:" + ex.Message);
-                     return;
-                 }
+                
 
                  try
                  {
                      bool result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.SelfCheck));
                      if (result)
                      {
-                         LoggingService.LogToShow("下位机控制板卡复位操作完成！" , InformationType.Success , InformationDisplayMode.FormList);
+                         LoggingService.LogToShow("下位机控制板卡自检操作完成！" , InformationType.Success , InformationDisplayMode.FormList);
                      }
                      else
-                         LoggingService.LogToShow("下位机控制板卡复位操作超时！" , InformationType.Error , InformationDisplayMode.FormList);
+                         LoggingService.LogToShow("下位机控制板卡自检操作超时！" , InformationType.Error , InformationDisplayMode.FormList);
                      //    ParaUI.Instance.paraStatus.IMicroStatus = ParaUI.Instance.paraStatus.State;
                  }
                  catch (Exception ex)
@@ -135,29 +116,10 @@ namespace HRP1679.BLL.Other
         {
             new Thread(
               new ThreadStart((Action)(() =>
-              {
+              {              
                   try
                   {
-                      bool re = DRFMCtrl.Instance.Dev800M.Reset();//硬复位
-                      // Hirain.Lib.HwDriver.Bar operateBAR = Hirain.Lib.HwDriver.Bar.Bar3;
-                      ParaUI.Instance.paraStatus.IDRFMStatus = re;
-                      if (re)
-                      {
-                          LoggingService.LogToShow("基带复位成功！" , InformationType.Success , InformationDisplayMode.FormList);
-                      }
-                      else
-                          LoggingService.LogToShow("基带复位失败！" , InformationType.Error , InformationDisplayMode.FormList);
-                      DRFMCtrl.Instance.SendResetCtrlPackage();//软复位
-
-                  }
-                  catch (Exception ex)
-                  {
-                      System.Windows.Forms.MessageBox.Show(ex.ToString());
-                      return;
-                  }
-                  try
-                  {
-                      SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.HardReset));
+                      SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.SoftReset));
                   }
                   catch (Exception ex)
                   {
@@ -191,29 +153,41 @@ namespace HRP1679.BLL.Other
               {
                   ParaUI.Instance.paraStatus.IBtnStartEnable = false;
                   #region
+                
                   try
                   {
-                      if (DRFMCtrl.Instance.Dev800M.PciDev != null)
+                      bool result = false;
+                      if (ParaUI.Instance.paraSignal.SignalType == 0)//只有回放模式发
                       {
-                          if (ParaUI.Instance.paraSignal.SignalType == 0)//只有回放模式发
-                              DRFMCtrl.Instance.SignalFileDownLoad(ParaUI.Instance.paraSignal.SingalDataFilePath);//信号产生文件
-
-                          DRFMCtrl.Instance.CoefDownLoad();//发送滤波器系数  20170704
-
-                          DRFMCtrl.Instance.SendBaseBoradCtrlPackage(DRFMCtrl.CalcCtrlWord(ParaUI.Instance)); //基带命令字发送                   
+                          result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.DownloadSignalFile));
+                          if (result)
+                              LoggingService.LogToShow("信号产生文件下发成功", InformationType.Success, InformationDisplayMode.FormList);
+                          else
+                          {
+                              LoggingService.LogToShow("信号产生文件下发超时", InformationType.Warning, InformationDisplayMode.FormList);
+                              ParaUI.Instance.paraStatus.IBtnStartEnable = true;
+                              return;
+                          }
                       }
-                  }
-                  catch (Exception ex)
-                  {
-                      LoggingService.LogToShow(ex.ToString(), InformationType.Error, InformationDisplayMode.FormList);
-                      ParaUI.Instance.paraStatus.IBtnStartEnable = true;
-                      return;
-                  }
-# if true
-                  try
-                  {
-                      bool result =
-                      SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.SetMicroWavePara));
+                      result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.DownloadCeofFile));
+                      if (result)
+                          LoggingService.LogToShow("滤波器系数文件下发成功", InformationType.Success, InformationDisplayMode.FormList);
+                      else
+                      {
+                          LoggingService.LogToShow("滤波器系数文件下发超时", InformationType.Warning, InformationDisplayMode.FormList);
+                          ParaUI.Instance.paraStatus.IBtnStartEnable = true;
+                          return;
+                      }
+                      result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.SetDRFMCtrlWord));
+                      if (result)
+                          LoggingService.LogToShow("基带命令字下发成功", InformationType.Success, InformationDisplayMode.FormList);
+                      else
+                      {
+                          LoggingService.LogToShow("基带命令字下发超时", InformationType.Warning, InformationDisplayMode.FormList);
+                          ParaUI.Instance.paraStatus.IBtnStartEnable = true;
+                          return;
+                      }
+                      result =  SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.SetMicroWavePara));
                       if (result)
                           LoggingService.LogToShow("微波参数设置成功", InformationType.Success, InformationDisplayMode.FormList);
                       else
@@ -257,7 +231,7 @@ namespace HRP1679.BLL.Other
                       ParaUI.Instance.paraStatus.IBtnStartEnable = true;
                       return;
                   }
-#endif
+
                   #endregion
                   //   DMACtrl.Instance.tcpclient[0].SendMessage(NetHandler.Instance.DMAPack(DMASCmdType.GetFileFolder));
 
@@ -270,19 +244,7 @@ namespace HRP1679.BLL.Other
             new Thread(
               new ThreadStart((Action)(() =>
               {
-
-                  try
-                  {
-
-                      DRFMCtrl.Instance.SendResetCtrlPackage();//软复位
-
-                  }
-                  catch (Exception ex)
-                  {
-                      LoggingService.LogToShow("基带复位失败："+ex.ToString(), InformationType.Warning, InformationDisplayMode.FormList);
-                      return;
-                  }
-
+                  
                   try
                   {
                       ParaUI.Instance.paraStatus.IBtnStartEnable = true;
@@ -316,17 +278,10 @@ namespace HRP1679.BLL.Other
             new Thread(
                  new ThreadStart((Action)(() =>
                  {
-                     uint vid = 0x10b5;
-                     uint did = 0x9056;
-                     string des = "基带板卡";
-                     DRFMCtrl.Instance.DeviceIniBaseBorad(vid, did, des);
-
-#if true
+                    
                      //下位机
                      SlaveCtrl.Instance.Connect();
                   //   DMACtrl.Instance.tcpclient[0].BeginConnect();
-
-#endif
                  }))
                  ) { IsBackground = true }.Start();
             // SlaveCtrl.Instance

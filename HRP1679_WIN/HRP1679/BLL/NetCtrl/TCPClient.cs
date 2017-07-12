@@ -61,8 +61,18 @@ namespace HRP1679.BLL.NetCtrl
             if (DataHanleEventDMA != null)
                 DataHanleEventDMA(array,ip);
         }
-
         #endregion
+        /// <summary>
+        /// 链接上服务器时需要做的事情
+        /// </summary>
+        public delegate void connectedEventDelegate();
+        public event connectedEventDelegate ConnectedEvent;
+        private void OnConnected()
+        {
+            if (ConnectedEvent != null)
+                ConnectedEvent();
+        }
+
 
         #region"INotifypropertychanged接口实现"
         public event PropertyChangedEventHandler PropertyChanged;
@@ -171,6 +181,7 @@ namespace HRP1679.BLL.NetCtrl
                 retryTimes = 0;             //重连次数重新计数
                 IsConnect = true;
                 netStream = new NetworkStream(client);
+                OnConnected();
                 BGWorker_Receive.RunWorkerAsync();
             }
             catch (Exception)

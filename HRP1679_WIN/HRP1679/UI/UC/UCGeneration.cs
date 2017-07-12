@@ -325,6 +325,6 @@ namespace HRP1679.UI.UC
             this.spePRFNum.DataBindings.Add("Value",ParaUI.Instance.paraSignal, "PrfNum", false,DataSourceUpdateMode.OnPropertyChanged);
         }
 
-        
+
     }
 }

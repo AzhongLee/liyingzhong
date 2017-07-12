@@ -405,15 +405,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(2, 339);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 20);
+            this.label8.Size = new System.Drawing.Size(133, 32);
             this.label8.TabIndex = 2;
             this.label8.Text = "存储版数据源设置";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cmbDataSourceSet
             // 
@@ -464,11 +465,6 @@
             this.speCeofCut.Properties.Mask.EditMask = "n";
             this.speCeofCut.Properties.MaxValue = new decimal(new int[] {
             160,
-            0,
-            0,
-            0});
-            this.speCeofCut.Properties.MinValue = new decimal(new int[] {
-            10,
             0,
             0,
             0});
@@ -934,7 +930,7 @@
             // cmbDetection
             // 
             this.cmbDetection.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cmbDetection.EditValue = "内部产生";
+            this.cmbDetection.EditValue = "内部检波";
             this.cmbDetection.Location = new System.Drawing.Point(140, 406);
             this.cmbDetection.Name = "cmbDetection";
             this.cmbDetection.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
@@ -942,7 +938,7 @@
             this.cmbDetection.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbDetection.Properties.Items.AddRange(new object[] {
-            "内部产生",
+            "内部检波",
             "外部PRF"});
             this.cmbDetection.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbDetection.Properties.LookAndFeel.UseDefaultLookAndFeel = false;

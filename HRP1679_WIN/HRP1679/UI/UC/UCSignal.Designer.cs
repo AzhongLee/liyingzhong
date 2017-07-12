@@ -127,14 +127,14 @@
             this.btneTrajFilePath.Location = new System.Drawing.Point(193, 428);
             this.btneTrajFilePath.Margin = new System.Windows.Forms.Padding(2);
             this.btneTrajFilePath.Name = "btneTrajFilePath";
-            this.btneTrajFilePath.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.btneTrajFilePath.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.btneTrajFilePath.Properties.Appearance.Options.UseFont = true;
             this.btneTrajFilePath.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.btneTrajFilePath.Properties.LookAndFeel.SkinName = "Blue";
             this.btneTrajFilePath.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btneTrajFilePath.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.btneTrajFilePath.Size = new System.Drawing.Size(85, 26);
+            this.btneTrajFilePath.Size = new System.Drawing.Size(85, 29);
             this.btneTrajFilePath.TabIndex = 11;
             this.btneTrajFilePath.Click += new System.EventHandler(this.btneTrajFilePath_Click);
             // 
@@ -142,7 +142,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label21.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label21.Location = new System.Drawing.Point(16, 428);
             this.label21.Margin = new System.Windows.Forms.Padding(2);
             this.label21.Name = "label21";
@@ -155,7 +155,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label19.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label19.Location = new System.Drawing.Point(16, 398);
             this.label19.Margin = new System.Windows.Forms.Padding(2);
             this.label19.MinimumSize = new System.Drawing.Size(129, 30);
@@ -176,7 +176,7 @@
             this.spePowPort1.Location = new System.Drawing.Point(193, 398);
             this.spePowPort1.Margin = new System.Windows.Forms.Padding(2);
             this.spePowPort1.Name = "spePowPort1";
-            this.spePowPort1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.spePowPort1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.spePowPort1.Properties.Appearance.Options.UseFont = true;
             this.spePowPort1.Properties.Appearance.Options.UseTextOptions = true;
             this.spePowPort1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -185,14 +185,14 @@
             this.spePowPort1.Properties.LookAndFeel.SkinName = "Blue";
             this.spePowPort1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.spePowPort1.Properties.Mask.EditMask = "n";
-            this.spePowPort1.Size = new System.Drawing.Size(85, 26);
+            this.spePowPort1.Size = new System.Drawing.Size(85, 29);
             this.spePowPort1.TabIndex = 6;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label20.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label20.Location = new System.Drawing.Point(288, 398);
             this.label20.Margin = new System.Windows.Forms.Padding(2);
             this.label20.Name = "label20";
@@ -212,7 +212,7 @@
             0});
             this.spePowPort2.Location = new System.Drawing.Point(465, 399);
             this.spePowPort2.Name = "spePowPort2";
-            this.spePowPort2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.spePowPort2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.spePowPort2.Properties.Appearance.Options.UseFont = true;
             this.spePowPort2.Properties.Appearance.Options.UseTextOptions = true;
             this.spePowPort2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -221,14 +221,14 @@
             this.spePowPort2.Properties.LookAndFeel.SkinName = "Blue";
             this.spePowPort2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.spePowPort2.Properties.Mask.EditMask = "n";
-            this.spePowPort2.Size = new System.Drawing.Size(87, 26);
+            this.spePowPort2.Size = new System.Drawing.Size(87, 29);
             this.spePowPort2.TabIndex = 6;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label10.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label10.Location = new System.Drawing.Point(16, 368);
             this.label10.Margin = new System.Windows.Forms.Padding(2);
             this.label10.MinimumSize = new System.Drawing.Size(129, 30);
@@ -245,7 +245,7 @@
             this.cmbEnumWorkMode.Location = new System.Drawing.Point(193, 368);
             this.cmbEnumWorkMode.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEnumWorkMode.Name = "cmbEnumWorkMode";
-            this.cmbEnumWorkMode.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.cmbEnumWorkMode.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.cmbEnumWorkMode.Properties.Appearance.Options.UseFont = true;
             this.cmbEnumWorkMode.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -255,7 +255,7 @@
             this.cmbEnumWorkMode.Properties.LookAndFeel.SkinName = "Blue";
             this.cmbEnumWorkMode.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.cmbEnumWorkMode.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbEnumWorkMode.Size = new System.Drawing.Size(85, 26);
+            this.cmbEnumWorkMode.Size = new System.Drawing.Size(85, 29);
             this.cmbEnumWorkMode.TabIndex = 14;
             this.cmbEnumWorkMode.SelectedIndexChanged += new System.EventHandler(this.cmbEnumWorkMode_SelectedIndexChanged);
             // 
@@ -263,7 +263,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.label11.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.label11.Location = new System.Drawing.Point(288, 368);
             this.label11.Margin = new System.Windows.Forms.Padding(2);
             this.label11.Name = "label11";
@@ -278,11 +278,11 @@
             this.txtEnumPort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtEnumPort.Location = new System.Drawing.Point(465, 369);
             this.txtEnumPort.Name = "txtEnumPort";
-            this.txtEnumPort.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.txtEnumPort.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 13F);
             this.txtEnumPort.Properties.Appearance.Options.UseFont = true;
             this.txtEnumPort.Properties.Mask.EditMask = "[0-9A-Fa-f]+";
             this.txtEnumPort.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtEnumPort.Size = new System.Drawing.Size(87, 26);
+            this.txtEnumPort.Size = new System.Drawing.Size(87, 29);
             this.txtEnumPort.TabIndex = 15;
             // 
             // panel1
@@ -339,8 +339,11 @@
             // 
             // button2
             // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 15F);
             this.button2.Location = new System.Drawing.Point(270, 2);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -352,8 +355,11 @@
             // 
             // button1
             // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 15F);
             this.button1.Location = new System.Drawing.Point(2, 2);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";

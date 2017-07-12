@@ -66,7 +66,21 @@ namespace HRP1679.DAL.Para
                    }) , null);
             }
         }
-       
+        /// <summary>
+        /// 基带板卡自检状态
+        /// </summary>
+       public bool IDRFMCheck
+        {
+            set {
+                ParaUI.UIhandler.Invoke((Action)(() => {
+                    if (value == true)
+                        DRFMStatus = "正常";
+                    else
+                        DRFMStatus = "自检异常";
+                }), null);
+            }
+        }
+
         private string microstatus;
         public string MicroStatus { get { return microstatus; } set { microstatus = value; this.RaisePropertyChanged("MicroStatus"); } }
         /// <summary>
@@ -201,7 +215,7 @@ namespace HRP1679.DAL.Para
                  if (value == true)
                     GCStatus = "正常";
                 else
-                    GCStatus = "异常";}) , null);
+                    GCStatus = "自检异常";}) , null);
                
             }
         }
@@ -248,7 +262,7 @@ namespace HRP1679.DAL.Para
                   if (value == true)
                     MemStatus = "正常";
                 else
-                    MemStatus = "异常";}) , null);
+                    MemStatus = "自检异常";}) , null);
               
             }
         }
@@ -263,15 +277,11 @@ namespace HRP1679.DAL.Para
             {
                 ParaUI.UIhandler.Invoke((Action)(() =>
                 {
-                  if (value == true)
-                {
-                    GCStatus = "正常";
-                    MemStatus = "异常";
-                }
-                else
+                  if (value == false)
                 {
                     GCStatus = "异常";
                     MemStatus = "异常";
+                    DRFMStatus = "异常";
                 }}) , null);
               
             }

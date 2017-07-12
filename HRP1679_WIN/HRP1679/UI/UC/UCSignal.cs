@@ -89,11 +89,16 @@ namespace HRP1679.UI.UC
 
         private void button1_Click(object sender, EventArgs e)
         {
+            (sender as Button).BackgroundImage = Properties.Resources.tabSelectNo;
+
+            this.button2.BackgroundImage = null;
             this.ucsystem.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            (sender as Button).BackgroundImage = Properties.Resources.tabSelectNo;
+            this.button1.BackgroundImage = null;
             this.ucgenerate.BringToFront();
         }
     }

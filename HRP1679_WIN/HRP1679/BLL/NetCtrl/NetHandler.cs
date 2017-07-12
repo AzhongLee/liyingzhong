@@ -2,9 +2,11 @@
 using HRP1679.BLL.BoardCtrl;
 using HRP1679.BLL.CtrlWord;
 using HRP1679.BLL.FileOperation;
+using HRP1679.DAL.Common;
 using HRP1679.DAL.Para;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -449,6 +451,51 @@ namespace HRP1679.BLL.NetCtrl
                 case SlaveSCmdType.InitializeDevice:
                     cmdlist[2] = 0xb;
                     goto default;
+                case SlaveSCmdType.DownloadSignalFile:
+                    List<string> lststrSignal = new List<string>();
+                    try
+                    {
+                        FileStream fs = new FileStream(ParaUI.Instance.paraSignal.SingalDataFilePath, FileMode.Open);
+                    StreamReader sr = new StreamReader(fs);
+                        while (sr.Peek() >= 0)
+                        {
+                            string strTemp = sr.ReadLine();
+                            strTemp.Trim();
+                            if(strTemp!=string.Empty)
+                            lststrSignal.Add(strTemp);
+                        }
+                        sr.Close();
+                        fs.Close();
+                    }
+                    catch (Exception)
+                    { }
+                    cmdlist[2] = 0xd;
+                    uint filelength = (uint)lststrSignal.Count;
+                    byte[] lenth = BitConverter.GetBytes(filelength);
+                    byte[] path = Encoding.Default.GetBytes(ParaUI.Instance.paraSignal.SingalDataFilePath);
+                    cmdlist[7] = (uint)(lenth.Length + path.Length);
+                    foreach (var item in cmdlist)
+                        cmdBytes.AddRange(BitConverter.GetBytes(item));
+                    cmdBytes.AddRange(lenth);
+                    cmdBytes.AddRange(path);
+                    cmdBytes.AddRange(BitConverter.GetBytes(frameTail));
+                    return cmdBytes.ToArray();
+                case SlaveSCmdType.DownloadCeofFile:
+                    cmdlist[2] = 0xc;
+                    cmdlist[7] = 128;
+                    cmdlist.AddRange(DRFMCtrl.GetCirDataPackage(ConstData.CoefFile));
+                    foreach (var item in cmdlist)
+                        cmdBytes.AddRange(BitConverter.GetBytes(item));
+                    cmdBytes.AddRange(BitConverter.GetBytes(frameTail));
+                    return cmdBytes.ToArray();
+                case SlaveSCmdType.SetDRFMCtrlWord:
+                    cmdlist[2] = 0xe;
+                    cmdlist[7] = 1024;
+                    cmdlist.AddRange(DRFMCtrl.CalcCtrlWord(ParaUI.Instance));
+                    foreach (var item in cmdlist)
+                        cmdBytes.AddRange(BitConverter.GetBytes(item));
+                    cmdBytes.AddRange(BitConverter.GetBytes(frameTail));
+                    return cmdBytes.ToArray();
                 default:
                     cmdlist.Add(frameTail);
                     foreach (var item in cmdlist)
@@ -646,10 +693,13 @@ namespace HRP1679.BLL.NetCtrl
                         ParaUI.Instance.paraStatus.State = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28));
                         break;
                     case SlaveRCmdType.SelfChecked:
+                        ParaUI.Instance.paraStatus.IDRFMCheck= Convert.ToBoolean(BitConverter.ToUInt32(recData, 28) & 0x4);
                         ParaUI.Instance.paraStatus.IMemSelfcheck = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x2);
                         ParaUI.Instance.paraStatus.IGCStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x1);
+
                         break;
                     case SlaveRCmdType.DeviceInitialized:
+                        ParaUI.Instance.paraStatus.IDRFMStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData, 28) & 0x8);
                         ParaUI.Instance.paraStatus.IMemInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x4);
                         ParaUI.Instance.paraStatus.IGCInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x2);
                         ParaUI.Instance.paraStatus.Initialized = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x1);
@@ -666,7 +716,7 @@ namespace HRP1679.BLL.NetCtrl
         #endregion
     }
     /// <summary>
-    /// 发送帧命令字
+    /// 存储板发送帧命令字
     /// </summary>
     public enum DMASCmdType
     {
@@ -690,7 +740,7 @@ namespace HRP1679.BLL.NetCtrl
         DownloadSoftware
     }
     /// <summary>
-    ///接收帧命令字
+    ///存储板接收帧命令字
     /// </summary>
     public enum DMARCmdType
     {
@@ -715,7 +765,7 @@ namespace HRP1679.BLL.NetCtrl
         SoftwareDownload
     }
     /// <summary>
-    /// 发送帧命令字
+    /// 上位机发送帧命令字
     /// </summary>
     public enum SlaveSCmdType
     {
@@ -730,8 +780,14 @@ namespace HRP1679.BLL.NetCtrl
         StopRecord ,
         UploadData ,
         InitializeDevice ,
-        BoudParaPackPortTow
+        BoudParaPackPortTow,//占用一个
+        DownloadCeofFile = 0x0d,
+        DownloadSignalFile,
+        SetDRFMCtrlWord
     }
+    /// <summary>
+    /// 下位机接收帧命令字
+    /// </summary>
     public enum SlaveRCmdType
     {
         SelfChecked = 0x01 ,
@@ -744,7 +800,10 @@ namespace HRP1679.BLL.NetCtrl
         RecordStarted ,
         RecordStoped ,
         DataUploaded ,
-        DeviceInitialized
+        DeviceInitialized,
+        CeofFileDownloaded=0x0c,
+        SignalFileDownloaded,
+        DRFMCtrlWordSet
     }
 
 }
