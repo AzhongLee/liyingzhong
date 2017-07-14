@@ -203,7 +203,10 @@ namespace HRP1679.DAL.Para
                
             }
         }
-        public string GCStatus { get; set; }
+        private string gcStatus;
+        public string GCStatus { get { return gcStatus; } set { gcStatus = value;
+        this.RaisePropertyChanged("GCStatus");
+        } }
         /// <summary>
         /// 通用控制板
         /// </summary>
@@ -249,7 +252,10 @@ namespace HRP1679.DAL.Para
                 //    LoggingService.LogToShow("端口" + port + "配置失败" , InformationType.Success , InformationDisplayMode.FormList);
             }
         }
-        public string MemStatus { get; set; }
+        private string memStatus;
+        public string MemStatus { get { return memStatus; } set { memStatus = value;
+        this.RaisePropertyChanged("MemStatus");
+        } }
        /// <summary>
        /// 反射内存卡
        /// </summary>

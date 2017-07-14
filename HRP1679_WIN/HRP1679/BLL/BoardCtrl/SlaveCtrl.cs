@@ -42,6 +42,7 @@ namespace HRP1679.BLL.BoardCtrl
         private void SlaveClient_ConnectedEvent()
         {
             SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.InitializeDevice));
+            FtpW32.Instance.Start();
         }
 
         public bool Connect()

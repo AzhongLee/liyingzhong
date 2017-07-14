@@ -276,6 +276,9 @@ namespace HRP1679.UI.UC
         {
             SetAllInvisible();
             this.lblPath.Visible = this.btnePath.Visible = true;
+            this.lblPRFPer.Visible = this.spePRFPeriod.Visible = true;
+            this.lblPRFPaulse.Visible = this.spePRFPaulseWidth.Visible = true;
+
         }
         /// <summary>
         /// 获取参数文件路径

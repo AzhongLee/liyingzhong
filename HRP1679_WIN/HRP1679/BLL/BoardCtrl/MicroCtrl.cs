@@ -69,9 +69,9 @@ namespace HRP1679.BLL.CtrlWord
             //4prf选择
             cmd.AddRange(BitConverter.GetBytes(ParaUI.Instance.paraDebug.prfSwitch));   //20170704
             //5prf周期
-            cmd.AddRange(BitConverter.GetBytes(Convert.ToUInt32(ParaUI.Instance.paraSignal.PRFCycle * 1e3 / 20)));
+            cmd.AddRange(BitConverter.GetBytes(Convert.ToUInt32(ParaUI.Instance.paraDebug.PrfPeroid * 1e3 / 20)));
             //6prf脉宽
-            cmd.AddRange(BitConverter.GetBytes(Convert.ToUInt32(ParaUI.Instance.paraSignal.PRFPulseWidth * 1e3 / 20)));
+            cmd.AddRange(BitConverter.GetBytes(Convert.ToUInt32(ParaUI.Instance.paraDebug.PrfBandwidth * 1e3 / 20)));
             //71ms选择
             cmd.AddRange(BitConverter.GetBytes(ParaUI.Instance.paraDebug.MsSwitch));
             //81ms周期
@@ -169,7 +169,7 @@ namespace HRP1679.BLL.CtrlWord
         /// <returns></returns>
         public static uint CalcSwitch(float fc,double atten)
         {
-            fc /=  1000;
+           
             uint control = 0,switch1 = 0,switch2 = 0;
             uint Atten1 = 0 , Atten2 = 0 , Atten3 = 0;
             //开关滤波器组
@@ -238,7 +238,7 @@ namespace HRP1679.BLL.CtrlWord
         /// <returns></returns>
         public static uint CalcFreModule(double fc)
         {
-            fc /= 1000;
+           
          //   uint cmd = 0xa58;
             uint F = 600 , onOff = 2;
             if (fc >= 8 && fc <= 14)
@@ -254,11 +254,11 @@ namespace HRP1679.BLL.CtrlWord
             {
                 onOff = 0;
             }
-            else if (fc >= 10 && fc < 13)
+            else if (fc >= 10 && fc < 12)
             {
                 onOff = 1;
             }
-            else if (fc >= 13 && fc < 16)
+            else if (fc >= 12 && fc < 16)
             {
                 onOff = 2;
             }
@@ -279,7 +279,7 @@ namespace HRP1679.BLL.CtrlWord
         public static uint CalcAGCWord(double powCmpAjust , uint signType , uint workMode)
         {
             uint gain = (uint)((~((int)powCmpAjust)) & 0x3F);
-            return gain << 2 | workMode << 1 | signType;
+            return gain << 2 | signType << 1 | workMode;
         }
         #endregion
 

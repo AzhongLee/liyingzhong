@@ -349,6 +349,7 @@ namespace HRP1679.BLL.NetCtrl
         }
         #endregion
         #endregion
+
         #region"下位机"
 
         #region"打包"
@@ -453,26 +454,37 @@ namespace HRP1679.BLL.NetCtrl
                     goto default;
                 case SlaveSCmdType.DownloadSignalFile:
                     List<string> lststrSignal = new List<string>();
+                    FileStream fs = new FileStream(ParaUI.Instance.paraSignal.SingalDataFilePath, FileMode.Open);
+                    StreamReader sr = new StreamReader(fs);
+                    FileStream fs2 = new FileStream(ConstData.SignalFile, FileMode.OpenOrCreate, FileAccess.Write);
+                    BinaryWriter bw = new BinaryWriter(fs2);
                     try
                     {
-                        FileStream fs = new FileStream(ParaUI.Instance.paraSignal.SingalDataFilePath, FileMode.Open);
-                    StreamReader sr = new StreamReader(fs);
                         while (sr.Peek() >= 0)
                         {
                             string strTemp = sr.ReadLine();
                             strTemp.Trim();
                             if(strTemp!=string.Empty)
                             lststrSignal.Add(strTemp);
+                            bw.Write(Convert.ToUInt32(strTemp));
                         }
                         sr.Close();
                         fs.Close();
+                        fs2.Close();
+                        bw.Close();
                     }
                     catch (Exception)
-                    { }
+                    {
+                        sr.Close();
+                        fs.Close();
+                        fs2.Close();
+                        bw.Close();
+                    }
                     cmdlist[2] = 0xd;
                     uint filelength = (uint)lststrSignal.Count;
+
                     byte[] lenth = BitConverter.GetBytes(filelength);
-                    byte[] path = Encoding.Default.GetBytes(ParaUI.Instance.paraSignal.SingalDataFilePath);
+                    byte[] path = Encoding.Default.GetBytes(ConstData.SignalFile);
                     cmdlist[7] = (uint)(lenth.Length + path.Length);
                     foreach (var item in cmdlist)
                         cmdBytes.AddRange(BitConverter.GetBytes(item));
@@ -619,6 +631,10 @@ namespace HRP1679.BLL.NetCtrl
                 {
                     arrayBytes.AddRange(BitConverter.GetBytes((int)Array[i]));
                 }
+                for (int i = 31; i < 34; i++)
+                {
+                    arrayBytes.AddRange(BitConverter.GetBytes(Array[i]));
+                }
             }
             catch (Exception)
             { }
@@ -639,6 +655,10 @@ namespace HRP1679.BLL.NetCtrl
                 {
                     arrayBytes.AddRange(BitConverter.GetBytes((int)Array[i]));
                 }
+                for (int i = 31; i < 35; i++)
+                {
+                    arrayBytes.AddRange(BitConverter.GetBytes(Array[i]));
+                }
                 arrayBytes.AddRange(BitConverter.GetBytes((int)Array[31]));
             }
             catch (Exception)
@@ -656,11 +676,12 @@ namespace HRP1679.BLL.NetCtrl
                 {
                     arrayBytes.AddRange(BitConverter.GetBytes(Array[i]));
                 }
-                arrayBytes.AddRange(BitConverter.GetBytes((int)Array[15]));
-                for (int i = 16; i < 22; i++)
+                arrayBytes.AddRange(BitConverter.GetBytes((uint)Array[15]));
+                for (int i = 16; i < 25; i++)
                 {
                     arrayBytes.AddRange(BitConverter.GetBytes((int)Array[i]));
                 }
+
             }
             catch (Exception)
             { }
@@ -678,7 +699,7 @@ namespace HRP1679.BLL.NetCtrl
             uint tail = BitConverter.ToUInt32(recData , recData.Length - 4);
             if (head == 0x55aa55aa && tail == 0xaa55aa55)
             {
-                switch ((SlaveRCmdType)BitConverter.ToUInt32(recData , 4))
+                switch ((SlaveRCmdType)BitConverter.ToUInt32(recData , 8))
                 {
                     case SlaveRCmdType.SoftReset:
                     case SlaveRCmdType.HardReset:
@@ -686,23 +707,23 @@ namespace HRP1679.BLL.NetCtrl
                     case SlaveRCmdType.Stoped:
                     case SlaveRCmdType.MicroWaveParaSet:
                     case SlaveRCmdType.DataUploaded:
-                        ParaUI.Instance.paraStatus.State = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28));
+                        ParaUI.Instance.paraStatus.State = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32));
                         break;
                     case SlaveRCmdType.ParaPackBouded:
-                        ParaUI.Instance.paraStatus.Port = BitConverter.ToUInt32(recData , 20);
-                        ParaUI.Instance.paraStatus.State = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28));
+                        ParaUI.Instance.paraStatus.Port = BitConverter.ToUInt32(recData , 24);
+                        ParaUI.Instance.paraStatus.State = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32));
                         break;
                     case SlaveRCmdType.SelfChecked:
-                        ParaUI.Instance.paraStatus.IDRFMCheck= Convert.ToBoolean(BitConverter.ToUInt32(recData, 28) & 0x4);
-                        ParaUI.Instance.paraStatus.IMemSelfcheck = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x2);
-                        ParaUI.Instance.paraStatus.IGCStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x1);
+                        ParaUI.Instance.paraStatus.IDRFMCheck= Convert.ToBoolean(BitConverter.ToUInt32(recData, 32) & 0x4);
+                        ParaUI.Instance.paraStatus.IMemSelfcheck = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32) & 0x2);
+                        ParaUI.Instance.paraStatus.IGCStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32) & 0x1);
 
                         break;
                     case SlaveRCmdType.DeviceInitialized:
-                        ParaUI.Instance.paraStatus.IDRFMStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData, 28) & 0x8);
-                        ParaUI.Instance.paraStatus.IMemInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x4);
-                        ParaUI.Instance.paraStatus.IGCInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x2);
-                        ParaUI.Instance.paraStatus.Initialized = Convert.ToBoolean(BitConverter.ToUInt32(recData , 28) & 0x1);
+                        ParaUI.Instance.paraStatus.IDRFMStatus = Convert.ToBoolean(BitConverter.ToUInt32(recData, 32) & 0x8);
+                        ParaUI.Instance.paraStatus.IMemInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32) & 0x4);
+                        ParaUI.Instance.paraStatus.IGCInit = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32) & 0x2);
+                        ParaUI.Instance.paraStatus.Initialized = Convert.ToBoolean(BitConverter.ToUInt32(recData , 32) & 0x1);
                         break;
                 }
             }

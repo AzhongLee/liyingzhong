@@ -41,6 +41,10 @@ namespace HRP1679.DAL.Common
         /// 界面参数文件路径
         /// </summary>
         public static  string UIDat = Path.Combine(Application.StartupPath , "ParameterUI\\UIParadata.dat");
+        /// <summary>
+        /// 信号回放文件
+        /// </summary>
+        public static string SignalFile = Path.Combine(Application.StartupPath, "SignalFile\\Signal.dat");
         #region"网络配置"
         /// <summary>
         /// 下位机

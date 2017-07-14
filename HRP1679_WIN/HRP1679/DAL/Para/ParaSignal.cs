@@ -68,14 +68,14 @@ namespace HRP1679.DAL.Para
         }
         /// <summary>
         /// prf周期
-        /// 20-1000us
+        /// 0-1000us
         /// </summary>
         public float PRFCycle
         {
             get { return pRFCycle; }
             set
             {
-                if (value >= 0 && value <= 1000)
+                if (value >= 0 )
                 {
                     pRFCycle = value;
                 }
@@ -83,14 +83,14 @@ namespace HRP1679.DAL.Para
         }
         /// <summary>
         /// PRF脉冲宽度
-        /// 1-30us
+        /// >1us
         /// </summary>
         public float PRFPulseWidth
         {
             get { return pRFPulseWidth; }
             set
             {
-                if (value >= 1 && value <= 30)
+                if (value >= 1 )
                 {
                     pRFPulseWidth = value;
                 }

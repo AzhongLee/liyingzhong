@@ -271,12 +271,8 @@ namespace HRP1679.BLL.FileOperation
                {
                    for (int i = 1; i < ds.Tables[0].Rows.Count; i++)
                    {
-                       if ((i > 15) && (i < 32)) //参数中包含int类型-modified by lchsh-20170701
-                       {
+                      
                            datalist.Add(Convert.ToInt32(ds.Tables[0].Rows[i].ItemArray[25]));
-                       }
-                       else
-                           datalist.Add(Convert.ToSingle(ds.Tables[0].Rows[i].ItemArray[25]));
                    }
                }
                catch (InvalidCastException)    //处理Excel表格获取的大小与实际大小不一致的情况，当索引数据为invalid时，退出
@@ -288,13 +284,8 @@ namespace HRP1679.BLL.FileOperation
                try
                {
                    for (int i = 1; i < ds.Tables[0].Rows.Count; i++)
-                   {                     
-                       if ((i > 15) && (i < 32)) //参数中包含int类型-modified by lchsh-20170701
-                       {
+                   {      
                            datalist.Add(Convert.ToInt32(ds.Tables[0].Rows[i].ItemArray[32]));
-                       }
-                       else
-                           datalist.Add(Convert.ToSingle(ds.Tables[0].Rows[i].ItemArray[32]));
                    }
                }
                catch (InvalidCastException)    //处理Excel表格获取的大小与实际大小不一致的情况，当索引数据为invalid时，退出
@@ -307,12 +298,7 @@ namespace HRP1679.BLL.FileOperation
                {
                    for (int i = 1; i < ds.Tables[0].Rows.Count; i++)
                    {
-                       if (i == 16) //参数中包含int类型-modified by lchsh-20170701
-                       {
                            datalist.Add(Convert.ToInt32(ds.Tables[0].Rows[i].ItemArray[39]));
-                       }
-                       else
-                           datalist.Add(Convert.ToSingle(ds.Tables[0].Rows[i].ItemArray[39]));
                    }
                }
                catch (InvalidCastException)    //处理Excel表格获取的大小与实际大小不一致的情况，当索引数据为invalid时，退出

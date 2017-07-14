@@ -160,6 +160,14 @@ namespace HRP1679.DAL.Para
         /// 开始信号
         /// </summary>
         public uint OffOn { get { return offOn; } set { offOn = value; } }
+        /// <summary>
+        /// prf周期
+        /// </summary>
+        public uint PrfPeroid { get { return prfPeroid; } set { prfPeroid = value; } }
+        /// <summary>
+        /// prf脉宽
+        /// </summary>
+        public uint PrfBandwidth { get {return prfBandwidth; } set { prfBandwidth = value; } }
 
         #endregion
 
@@ -167,6 +175,8 @@ namespace HRP1679.DAL.Para
         private uint timingSwith;
         private uint timingInterval;
         public uint prfSwitch;  //modified by lchsh-20170701
+        private uint prfPeroid;
+        private uint prfBandwidth;
         private uint msSwitch;
         private uint msPeriod;
         private uint msBandwidth;

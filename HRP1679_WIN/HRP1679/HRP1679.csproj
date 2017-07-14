@@ -124,6 +124,8 @@
     <Compile Include="BLL\BoardCtrl\SlaveCtrl.cs" />
     <Compile Include="BLL\FileOperation\BinFileOperation.cs" />
     <Compile Include="BLL\FileOperation\TxtOperation.cs" />
+    <Compile Include="BLL\NetCtrl\FtpServerU.cs" />
+    <Compile Include="BLL\NetCtrl\FtpW32.cs" />
     <Compile Include="BLL\NetCtrl\NetHandler.cs" />
     <Compile Include="BLL\NetCtrl\TCPClient.cs" />
     <Compile Include="BLL\NetCtrl\TCPServer.cs" />

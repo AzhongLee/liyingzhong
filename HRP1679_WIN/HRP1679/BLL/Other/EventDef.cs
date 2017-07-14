@@ -196,24 +196,27 @@ namespace HRP1679.BLL.Other
                           ParaUI.Instance.paraStatus.IBtnStartEnable = true;
                           return;
                       }
-                      HRP1679.BLL.FileOperation.ExcelOperate.Instance.ReadInTrajSheet();//读取
-                      result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.BoudParaPackPortOne));
-                      if (result)
-                          LoggingService.LogToShow("端口1参数设置成功", InformationType.Success, InformationDisplayMode.FormList);
-                      else
+                      if (ParaUI.Instance.paraTrajector.TrajectorType==1) //模拟仿真机时发送
                       {
-                          LoggingService.LogToShow("端口1参数设置超时", InformationType.Warning, InformationDisplayMode.FormList);
-                          ParaUI.Instance.paraStatus.IBtnStartEnable = true;
-                          return;
-                      }
-                      result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.BoudParaPackPortTow));
-                      if (result)
-                          LoggingService.LogToShow("端口2参数设置成功", InformationType.Success, InformationDisplayMode.FormList);
-                      else
-                      {
-                          LoggingService.LogToShow("端口2参数设置超时", InformationType.Warning, InformationDisplayMode.FormList);
-                          ParaUI.Instance.paraStatus.IBtnStartEnable = true;
-                          return;
+                          HRP1679.BLL.FileOperation.ExcelOperate.Instance.ReadInTrajSheet();//读取
+                          result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.BoudParaPackPortOne));
+                          if (result)
+                              LoggingService.LogToShow("端口1参数设置成功", InformationType.Success, InformationDisplayMode.FormList);
+                          else
+                          {
+                              LoggingService.LogToShow("端口1参数设置超时", InformationType.Warning, InformationDisplayMode.FormList);
+                              ParaUI.Instance.paraStatus.IBtnStartEnable = true;
+                              return;
+                          }
+                          result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.BoudParaPackPortTow));
+                          if (result)
+                              LoggingService.LogToShow("端口2参数设置成功", InformationType.Success, InformationDisplayMode.FormList);
+                          else
+                          {
+                              LoggingService.LogToShow("端口2参数设置超时", InformationType.Warning, InformationDisplayMode.FormList);
+                              ParaUI.Instance.paraStatus.IBtnStartEnable = true;
+                              return;
+                          }
                       }
                       result = SlaveCtrl.Instance.SendMessageToSlave(NetHandler.Instance.SlavePack(SlaveSCmdType.Start));
                       if (result)

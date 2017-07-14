@@ -93,7 +93,8 @@ namespace HRP1679.UI
             this.speTargetDis1.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "Target1Distance", false, DataSourceUpdateMode.OnPropertyChanged);
             this.speTargetDis2.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "Target2Distance", false, DataSourceUpdateMode.OnPropertyChanged);
             this.cmbOffOn.DataBindings.Add("SelectedIndex", ParaUI.Instance.paraDebug, "OffOn", false, DataSourceUpdateMode.OnPropertyChanged);
-
+            this.spePrfPeriod.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "PrfPeroid", false, DataSourceUpdateMode.OnPropertyChanged);
+            this.spePrfBandWidth.DataBindings.Add("Value", ParaUI.Instance.paraDebug, "PrfBandwidth", false, DataSourceUpdateMode.OnPropertyChanged);
 
         }
         #endregion

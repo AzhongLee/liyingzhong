@@ -75,6 +75,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.cmbFcModel = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.spePrfPeriod = new DevExpress.XtraEditors.SpinEdit();
+            this.spePrfBandWidth = new DevExpress.XtraEditors.SpinEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speInherentDelay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbPRF.Properties)).BeginInit();
@@ -97,6 +101,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbOffOn.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDetection.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spePrfPeriod.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spePrfBandWidth.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -132,34 +138,38 @@
             this.tableLayoutPanel1.Controls.Add(this.label13, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label14, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.cmbPrfSwitch, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label16, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label17, 3, 8);
-            this.tableLayoutPanel1.Controls.Add(this.spemsPeriod, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.spemsBandWidth, 4, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label18, 3, 11);
-            this.tableLayoutPanel1.Controls.Add(this.cmbmsSwitch, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 3, 12);
-            this.tableLayoutPanel1.Controls.Add(this.cmbElectricalLevel, 4, 12);
-            this.tableLayoutPanel1.Controls.Add(this.cmblunchSwitch, 4, 11);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 3, 13);
-            this.tableLayoutPanel1.Controls.Add(this.cmbIRQ, 4, 13);
-            this.tableLayoutPanel1.Controls.Add(this.label21, 3, 14);
-            this.tableLayoutPanel1.Controls.Add(this.label22, 3, 16);
-            this.tableLayoutPanel1.Controls.Add(this.label23, 3, 15);
-            this.tableLayoutPanel1.Controls.Add(this.speTargetDis1, 4, 14);
-            this.tableLayoutPanel1.Controls.Add(this.speTargetDis2, 4, 15);
-            this.tableLayoutPanel1.Controls.Add(this.cmbOffOn, 4, 16);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 13);
             this.tableLayoutPanel1.Controls.Add(this.cmbDetection, 1, 13);
             this.tableLayoutPanel1.Controls.Add(this.label24, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 18);
             this.tableLayoutPanel1.Controls.Add(this.cmbFcModel, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label22, 3, 19);
+            this.tableLayoutPanel1.Controls.Add(this.cmbOffOn, 4, 19);
+            this.tableLayoutPanel1.Controls.Add(this.label25, 3, 18);
+            this.tableLayoutPanel1.Controls.Add(this.label26, 3, 17);
+            this.tableLayoutPanel1.Controls.Add(this.speTargetDis2, 4, 18);
+            this.tableLayoutPanel1.Controls.Add(this.speTargetDis1, 4, 17);
+            this.tableLayoutPanel1.Controls.Add(this.cmbIRQ, 4, 15);
+            this.tableLayoutPanel1.Controls.Add(this.cmbElectricalLevel, 4, 14);
+            this.tableLayoutPanel1.Controls.Add(this.cmblunchSwitch, 4, 13);
+            this.tableLayoutPanel1.Controls.Add(this.label20, 3, 15);
+            this.tableLayoutPanel1.Controls.Add(this.label19, 3, 14);
+            this.tableLayoutPanel1.Controls.Add(this.label18, 3, 13);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 3, 20);
+            this.tableLayoutPanel1.Controls.Add(this.label23, 3, 6);
+            this.tableLayoutPanel1.Controls.Add(this.spePrfPeriod, 4, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label16, 3, 12);
+            this.tableLayoutPanel1.Controls.Add(this.label21, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.spemsPeriod, 4, 12);
+            this.tableLayoutPanel1.Controls.Add(this.spePrfBandWidth, 4, 7);
+            this.tableLayoutPanel1.Controls.Add(this.label17, 3, 11);
+            this.tableLayoutPanel1.Controls.Add(this.label15, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.spemsBandWidth, 4, 11);
+            this.tableLayoutPanel1.Controls.Add(this.cmbmsSwitch, 4, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 19;
+            this.tableLayoutPanel1.RowCount = 21;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
@@ -177,9 +187,11 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(722, 589);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(722, 652);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -604,7 +616,7 @@
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(326, 243);
+            this.label15.Location = new System.Drawing.Point(326, 307);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(153, 32);
@@ -618,7 +630,7 @@
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(326, 275);
+            this.label16.Location = new System.Drawing.Point(326, 371);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(153, 32);
@@ -632,7 +644,7 @@
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(326, 307);
+            this.label17.Location = new System.Drawing.Point(326, 339);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(153, 32);
@@ -648,7 +660,7 @@
             0,
             0,
             0});
-            this.spemsPeriod.Location = new System.Drawing.Point(484, 278);
+            this.spemsPeriod.Location = new System.Drawing.Point(484, 374);
             this.spemsPeriod.Name = "spemsPeriod";
             this.spemsPeriod.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.spemsPeriod.Properties.Appearance.Options.UseFont = true;
@@ -670,7 +682,7 @@
             0,
             0,
             0});
-            this.spemsBandWidth.Location = new System.Drawing.Point(484, 310);
+            this.spemsBandWidth.Location = new System.Drawing.Point(484, 342);
             this.spemsBandWidth.Name = "spemsBandWidth";
             this.spemsBandWidth.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.spemsBandWidth.Properties.Appearance.Options.UseFont = true;
@@ -690,7 +702,7 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(326, 339);
+            this.label18.Location = new System.Drawing.Point(326, 403);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(153, 32);
@@ -702,7 +714,7 @@
             // 
             this.cmbmsSwitch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbmsSwitch.EditValue = "外部产生";
-            this.cmbmsSwitch.Location = new System.Drawing.Point(484, 246);
+            this.cmbmsSwitch.Location = new System.Drawing.Point(484, 310);
             this.cmbmsSwitch.Name = "cmbmsSwitch";
             this.cmbmsSwitch.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmbmsSwitch.Properties.Appearance.Options.UseFont = true;
@@ -723,7 +735,7 @@
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(326, 371);
+            this.label19.Location = new System.Drawing.Point(326, 435);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(153, 32);
@@ -735,7 +747,7 @@
             // 
             this.cmbElectricalLevel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbElectricalLevel.EditValue = "外部启动";
-            this.cmbElectricalLevel.Location = new System.Drawing.Point(484, 374);
+            this.cmbElectricalLevel.Location = new System.Drawing.Point(484, 438);
             this.cmbElectricalLevel.Name = "cmbElectricalLevel";
             this.cmbElectricalLevel.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmbElectricalLevel.Properties.Appearance.Options.UseFont = true;
@@ -754,7 +766,7 @@
             // 
             this.cmblunchSwitch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmblunchSwitch.EditValue = "外部启动";
-            this.cmblunchSwitch.Location = new System.Drawing.Point(484, 342);
+            this.cmblunchSwitch.Location = new System.Drawing.Point(484, 406);
             this.cmblunchSwitch.Name = "cmblunchSwitch";
             this.cmblunchSwitch.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmblunchSwitch.Properties.Appearance.Options.UseFont = true;
@@ -775,7 +787,7 @@
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(326, 403);
+            this.label20.Location = new System.Drawing.Point(326, 467);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(153, 32);
@@ -787,7 +799,7 @@
             // 
             this.cmbIRQ.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbIRQ.EditValue = "不发送";
-            this.cmbIRQ.Location = new System.Drawing.Point(484, 406);
+            this.cmbIRQ.Location = new System.Drawing.Point(484, 470);
             this.cmbIRQ.Name = "cmbIRQ";
             this.cmbIRQ.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmbIRQ.Properties.Appearance.Options.UseFont = true;
@@ -808,25 +820,23 @@
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(326, 435);
+            this.label21.Location = new System.Drawing.Point(326, 275);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(153, 32);
             this.label21.TabIndex = 14;
-            this.label21.Text = "端口一弹幕距";
+            this.label21.Text = "prf脉宽[us]";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label21.Visible = false;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(326, 499);
+            this.label22.Location = new System.Drawing.Point(326, 563);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(153, 32);
+            this.label22.Size = new System.Drawing.Size(93, 20);
             this.label22.TabIndex = 14;
             this.label22.Text = "启动开始信号";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -838,24 +848,22 @@
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(326, 467);
+            this.label23.Location = new System.Drawing.Point(326, 243);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(153, 32);
             this.label23.TabIndex = 14;
-            this.label23.Text = "端口二弹幕距";
+            this.label23.Text = "prf周期[us]";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label23.Visible = false;
             // 
             // speTargetDis1
             // 
-            this.speTargetDis1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.speTargetDis1.EditValue = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.speTargetDis1.Location = new System.Drawing.Point(484, 438);
+            this.speTargetDis1.Location = new System.Drawing.Point(484, 502);
             this.speTargetDis1.Name = "speTargetDis1";
             this.speTargetDis1.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.speTargetDis1.Properties.Appearance.Options.UseFont = true;
@@ -872,13 +880,12 @@
             // 
             // speTargetDis2
             // 
-            this.speTargetDis2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.speTargetDis2.EditValue = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.speTargetDis2.Location = new System.Drawing.Point(484, 470);
+            this.speTargetDis2.Location = new System.Drawing.Point(484, 534);
             this.speTargetDis2.Name = "speTargetDis2";
             this.speTargetDis2.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.speTargetDis2.Properties.Appearance.Options.UseFont = true;
@@ -895,9 +902,8 @@
             // 
             // cmbOffOn
             // 
-            this.cmbOffOn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbOffOn.EditValue = "开始";
-            this.cmbOffOn.Location = new System.Drawing.Point(484, 502);
+            this.cmbOffOn.Location = new System.Drawing.Point(484, 566);
             this.cmbOffOn.Name = "cmbOffOn";
             this.cmbOffOn.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
             this.cmbOffOn.Properties.Appearance.Options.UseFont = true;
@@ -967,7 +973,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.button1, 2);
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 10.2F);
-            this.button1.Location = new System.Drawing.Point(437, 555);
+            this.button1.Location = new System.Drawing.Point(437, 597);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 27);
@@ -996,12 +1002,84 @@
             this.cmbFcModel.Size = new System.Drawing.Size(151, 26);
             this.cmbFcModel.TabIndex = 16;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(326, 531);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(93, 20);
+            this.label25.TabIndex = 14;
+            this.label25.Text = "端口二弹幕距";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label25.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("微软雅黑", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(326, 499);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(93, 20);
+            this.label26.TabIndex = 14;
+            this.label26.Text = "端口一弹幕距";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label26.Visible = false;
+            // 
+            // spePrfPeriod
+            // 
+            this.spePrfPeriod.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spePrfPeriod.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.spePrfPeriod.Location = new System.Drawing.Point(484, 246);
+            this.spePrfPeriod.Name = "spePrfPeriod";
+            this.spePrfPeriod.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.spePrfPeriod.Properties.Appearance.Options.UseFont = true;
+            this.spePrfPeriod.Properties.Appearance.Options.UseTextOptions = true;
+            this.spePrfPeriod.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.spePrfPeriod.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.spePrfPeriod.Properties.LookAndFeel.SkinName = "Blue";
+            this.spePrfPeriod.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.spePrfPeriod.Properties.Mask.EditMask = "n";
+            this.spePrfPeriod.Size = new System.Drawing.Size(149, 26);
+            this.spePrfPeriod.TabIndex = 12;
+            // 
+            // spePrfBandWidth
+            // 
+            this.spePrfBandWidth.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spePrfBandWidth.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.spePrfBandWidth.Location = new System.Drawing.Point(484, 278);
+            this.spePrfBandWidth.Name = "spePrfBandWidth";
+            this.spePrfBandWidth.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.2F);
+            this.spePrfBandWidth.Properties.Appearance.Options.UseFont = true;
+            this.spePrfBandWidth.Properties.Appearance.Options.UseTextOptions = true;
+            this.spePrfBandWidth.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.spePrfBandWidth.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.spePrfBandWidth.Properties.LookAndFeel.SkinName = "Blue";
+            this.spePrfBandWidth.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.spePrfBandWidth.Properties.Mask.EditMask = "n";
+            this.spePrfBandWidth.Size = new System.Drawing.Size(149, 26);
+            this.spePrfBandWidth.TabIndex = 12;
+            // 
             // FormDebug
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HRP1679.Properties.Resources.main;
-            this.ClientSize = new System.Drawing.Size(722, 589);
+            this.ClientSize = new System.Drawing.Size(722, 652);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1030,6 +1108,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbOffOn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDetection.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbFcModel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spePrfPeriod.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spePrfBandWidth.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1083,5 +1163,9 @@
         private DevExpress.XtraEditors.ComboBoxEdit cmbDetection;
         private System.Windows.Forms.Label label24;
         private DevExpress.XtraEditors.ComboBoxEdit cmbFcModel;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private DevExpress.XtraEditors.SpinEdit spePrfPeriod;
+        private DevExpress.XtraEditors.SpinEdit spePrfBandWidth;
     }
 }
